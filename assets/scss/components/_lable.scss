@@ -1,0 +1,53 @@
+/* This variable defines the CSS color codes for labels. */
+$color-lable:(
+    color-red: #F74545,
+    color-blue: #47ADFF,
+    color-yellow: #FAAF43,
+    color-purple: #EA42E0,
+    color-green: #32B25D,
+    color-price:#32B25D,
+);
+/* This variable defines the CSS color codes for backgrounds. */
+$background-lable:(
+    color-red: #FFEDEB,
+    color-blue: #EBF9FF,
+    color-yellow: #FFF8E8,
+    color-purple: #FFEBFB,
+    color-green: #E4F2E6,
+    color-price:#EEFFF5,
+
+);
+/* This mixin takes a color name as an argument and sets the corresponding color and background color for the element. */   
+@mixin colors-style($color){
+
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: map-get($background-lable,$color);
+    display: flex;
+    align-items: center;
+    p{
+        font-size: 9.99px;
+        font-weight: 500;
+        line-height: 16px;
+        color: map-get($color-lable,$color);
+    }
+};
+/* These classes apply the colors-style mixin to different elements. */
+.lable-red{
+    @include colors-style(color-red);
+};
+.lable-blue{
+    @include colors-style(color-blue);
+};
+.lable-yellow{
+    @include colors-style(color-yellow);
+};
+.lable-purple{
+    @include colors-style(color-purple);
+};
+.lable-green{
+    @include colors-style(color-green);
+};
+.lable-price{
+    @include colors-style(color-price);
+};

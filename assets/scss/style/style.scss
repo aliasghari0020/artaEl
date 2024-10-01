@@ -1,0 +1,74 @@
+
+@use "../custom-bootstrap/custom.scss";
+@use"../components/setting/color";
+@use"../components/setting/typographp";
+@use "../components/layout/search";
+@use "../components/layout/story";
+@use"../components/layout/slider";
+@use"../components/layout/servises";
+@use"../components/layout/card";
+@use"../components/layout/multiStyle";
+@use"../components/layout/card-section";
+@use"../components/layout/header";
+@use "../components/layout/mega-menu";
+@use "../components/setting/breadcrumb";
+@use "../page/category";
+body {
+    direction: rtl;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}  ;
+
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img , svg{
+    vertical-align: auto !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+.scroll-none{
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.scroll-smooth{
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width: 1024px){
+    .rounded-xs-0{
+        border-radius: 0 !important;
+    }
+}
+
+//&::-webkit-scrollbar {
+//    width: 12px; /* عرض اسکرول بار */
+//    border-radius: 8px;
+//}
+//&::-webkit-scrollbar-track {
+//    border-radius: 8px;
+//    background: var(--Colors-Nutrals-Mixed-Light-N20, #F4F5F7);
+//}
+//&::-webkit-scrollbar-thumb {
+//    background: #C1C7D0; /* رنگ اسکرول بار */
+//    border-radius: 8px; /* گرد کردن گوشه‌های اسکرول بار */
+//}
+//
+//&::-webkit-scrollbar-thumb:hover {
+//    background: #C1C7D0;
+//}

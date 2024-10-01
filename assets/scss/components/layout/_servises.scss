@@ -1,0 +1,52 @@
+$servis-size: (
+    desktop:64px,
+    tablet:56px,
+    mobile:40px,
+);
+
+
+@mixin servis-size-box($device) {
+    width: map-get($servis-size, $device );
+    height: map-get($servis-size, $device );
+
+    svg {
+        width: map-get($servis-size, $device );
+        height: map-get($servis-size, $device );
+    }
+}  ;
+
+
+.servis-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    max-width: 1320px;
+}
+
+
+
+
+.servis {
+    @include servis-size-box(mobile)
+}
+
+
+
+@media screen and (min-width:768px) {
+    .servis {
+        @include servis-size-box(tablet)
+    }
+}
+
+;
+
+@media screen and (min-width:1024px) {
+    .servis {
+        @include servis-size-box(desktop)
+    }
+    .offer-link {
+    border-radius: 4px;
+    border: 1px solid var(--Colors-Nutrals-Nutral-Light-N0, #FFF);
+}
+}

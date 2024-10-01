@@ -1,0 +1,140 @@
+$colors: (
+        blue: (
+                1: #1677ff,
+                2: #1677ff,
+                3: #1677ff,
+                4: #1677ff,
+                5: #1677ff,
+                6: #1677ff,
+                7: #1677ff,
+                8: #1677ff,
+                9: #1677ff,
+                10: #1677ff,
+        ),
+        yellow: (
+                1: #fffbe6,
+                2: #fff1b8,
+                3: #ffe58f,
+                4: #ffd666,
+                5: #ffc53d,
+                7: #d48806,
+                8: #ad6800,
+                9: #874d00,
+                10: #613400,
+        ),
+        green: (
+                1: #f6ffed,
+                2: #d9f7be,
+                3: #b7eb8f,
+                4: #95de64,
+                5: #73d13d,
+                7: #389e0d,
+                8: #237804,
+                9: #135200,
+                10: #092b00,
+        ),
+        red: (1: #fff1f0,
+                2: #ffccc7,
+                3: #ffa39e,
+                4: #ff7875,
+                6: #f5222d,
+                7: #cf1322,
+                8: #a8071a,
+                9: #820014,
+                10: #5c0011,
+        ),
+        gray: (
+                1: #fafafa,
+                2: #f5f5f5,
+                3: #f0f0f0,
+                4: #d9d9d9,
+                5: #bfbfbf,
+                6: #8c8c8c,
+                7: #595959,
+                8: #434343,
+                9: #262626,
+                10: #1f1f1f,
+                11: #141414,
+        ),
+        primary: (
+                1: #fff2f0,
+                2: #ffe9e6,
+                3: #ffc3bd,
+                4: #ff9b94,
+                5: #fc6f6a,
+                base:#ef3f40,
+                7: #c92a30,
+                8: #a31a23,
+                9: #7d0e19,
+                10: #570913,
+        ),
+        secondary: (
+                1: #fffaf0,
+                2: #fff9f0,
+                3: #ffe8c7,
+                4: #ffd39e,
+                5: #fcbb74,
+                7: #c97632,
+                8: #a35721,
+                9: #7d3e16,
+                10: #7d3e16,
+        ),
+        neutral-light:(
+                10:#fafbfc,
+                20:#f4f5f7,
+                30:#ebecf0,
+                40:#dfe1e6,
+                50:#c1c7d0,
+        ),
+        neutral-mix:(
+                60:#b3bac5,
+                70:#a5adba,
+                80:#97a0af,
+                90:#8993a4,
+                100:#7a869a,
+                200:#6b778c,
+                300:#5e6c84,
+                400:#505f79,
+                500:#42526e,
+                600:#344563,
+                700:#253858,
+                800:#172b4d,
+                900:#091e42,
+                black:#000000,
+        ),
+        
+        neutral-pure:(
+                100:#f0f0ec,
+                200:#e0e0e2,
+                300:#c0c2c5,
+                400:#a1a3a8,
+                500:#81858b,
+                600:#62666d,
+                700:#3f4064,
+                800:#23254e,
+                900:#0c0c0c,
+        ),
+
+
+        light:(
+                text:#000000E0,
+                secodary:#000000A6,
+                disabled:#00000040,
+                black:#000,
+        )
+);
+@each $color-name, $color-values in $colors {
+  @each $shade, $hex in $color-values {
+    .#{$color-name}-#{$shade} {
+      color: $hex;
+    }
+  }
+}
+
+@each $color-name, $color-values in $colors {
+  @each $shade, $hex in $color-values {
+    .bg-#{$color-name}-#{$shade} {
+      background: $hex;
+    }
+  }
+}

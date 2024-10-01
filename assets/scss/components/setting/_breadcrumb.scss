@@ -1,0 +1,20 @@
+.breadcrumb{
+  display: flex;
+  .item{
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    a{
+      color: #000;
+    }
+    &:after{
+      content: url("/assets/image/svg/right-arow.svg");
+      height: 16px;
+    }
+    &.last{
+      &:after{
+        content: '';
+      }
+    }
+  }
+}

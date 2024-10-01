@@ -1,0 +1,663 @@
+
+/* Heading font sizes */
+$heading-font-size:(
+        h1: 41.5px,
+        h2: 36.49px,
+        h3: 32.44px,
+        h4: 28.83px,
+        h5: 25.63px,
+        h6: 22.78px,
+);
+/* Heading line heights */
+$heading-line-height:(
+        h1: 72px,
+        h2: 64px,
+        h3: 56px,
+        h4: 56px,
+        h5: 40px,
+        h6: 40px,
+);
+$heading-weight:(
+        medium:500,
+        bold:800,
+        heavy:900,
+);
+
+
+
+
+/* Heading styles mixin */
+@mixin heading-style($size, $device){
+  font-size: map-get($heading-font-size,$size);
+  line-height: map-get($heading-line-height,$size);
+  font-weight: map-get($heading-weight , $device );
+};
+/* Text body font sizes */
+$text-body-font-size:(
+        title:20.25px,
+        subTitle:18px,
+        body:16px,
+        small: 14.22px,
+        caption: 12.64px,
+        footnote: 11.24px,
+        tag: 9.99px,
+        sTag:7.89px,
+);
+/* Text body line heights */
+$text-body-line-height:(
+        title:48px,
+        subTitle:40px,
+        body:32px,
+        small: 28px,
+        caption: 20px,
+        footnote: 20px,
+        tag: 16px,
+        sTag: 8px,
+);
+/* Text body font weights */
+$text-body-font-weight:(
+        normal:500,
+        bold:800
+);
+/* Text body styles mixin */
+@mixin text-body-style($size , $type){
+  font-size: map-get($text-body-font-size,$size);
+  line-height: map-get($text-body-line-height,$size);
+  font-weight: map-get($text-body-font-weight, $type);
+};
+/* Apply heading styles to heading elements */
+h1,.h1{
+  @include heading-style(h1,medium)
+};
+h2,h2{
+  @include heading-style(h2,medium)
+};
+h3,.h3{
+  @include heading-style(h3,medium)
+};
+h4,.h4{
+  @include heading-style(h4,medium)
+};
+h5,.h5{
+  @include heading-style(h5,medium)
+};
+h6,.h6{
+  @include heading-style(h6,medium)
+};
+// bold
+.h1-b{
+  @include heading-style(h1,bold)
+};
+.h2-b{
+  @include heading-style(h2,bold)
+};
+.h3-b{
+  @include heading-style(h3,bold)
+};
+.h4-b{
+  @include heading-style(h4,bold)
+};
+.h5-b{
+  @include heading-style(h5,bold)
+};
+.h6-b{
+  @include heading-style(h6,bold)
+};
+// heavy
+.h1-h{
+  @include heading-style(h1,heavy)
+};
+.h2-h{
+  @include heading-style(h2,heavy)
+};
+.h3-h{
+  @include heading-style(h3,heavy)
+};
+.h4-h{
+  @include heading-style(h4,heavy)
+};
+.h5-h{
+  @include heading-style(h5,heavy)
+};
+.h6-h{
+  @include heading-style(h6,heavy)
+};
+/* Apply text body styles to text elements */
+.text-title{
+  @include text-body-style(title,normal );
+  font-weight: 800; // text ExtraBlack
+};
+// ___________________________________________________________
+.text-sub-title{
+  @include text-body-style(subTitle,normal ); // normal text subTitle
+};
+.text-sub-title-b{
+  @include text-body-style(subTitle,bold ); // bold text subTitle
+};
+// ________________________________________________________________
+.text-main{
+  @include text-body-style(body,normal ); // normal text body
+};
+.text-main-b{
+  @include text-body-style(body,bold ); // bold text body
+};
+// ________________________________________________________
+.text-small{
+  @include text-body-style(small,normal ); // normal text small
+};
+.text-small-b{
+  @include text-body-style(small,bold ); // bold text small
+};
+// _________________________________________________________________
+.text-caption{
+  @include text-body-style(caption,normal ); // normal text caption
+};
+.text-caption-b{
+  @include text-body-style(caption,bold ); // bold text caption
+};
+// _________________________________________________________________
+.text-footnote{
+  @include text-body-style(footnote,normal ); // normal text footnote
+};
+.text-footnote-b{
+  @include text-body-style(footnote,bold ); // bold text footnote
+};
+// ______________________________________________________________
+.text-tag{
+  @include text-body-style(tag,normal ); // normal text tag
+};
+.text-tag-b{
+  @include text-body-style(tag,bold ); // bold text tag
+};
+.text-stag{
+  @include text-body-style(sTag,normal)
+}
+
+@media screen and (min-width:480px) {
+  .h1-sm{
+    @include heading-style(h1,medium)
+  };
+  .h2-sm{
+    @include heading-style(h2,medium)
+  };
+  .h3-sm{
+    @include heading-style(h3,medium)
+  };
+  .h4-sm{
+    @include heading-style(h4,medium)
+  };
+  .h5-sm{
+    @include heading-style(h5,medium)
+  };
+  .h6-sm{
+    @include heading-style(h6,medium)
+  };
+  // bold______________________________________________________
+  .h1-b-sm{
+    @include heading-style(h1,bold)
+  };
+  .h2-b-sm{
+    @include heading-style(h2,bold)
+  };
+  .h3-b-sm{
+    @include heading-style(h3,bold)
+  };
+  .h4-b-sm{
+    @include heading-style(h4,bold)
+  };
+  .h5-b-sm{
+    @include heading-style(h5,bold)
+  };
+  .h6-b-sm{
+    @include heading-style(h6,bold)
+  };
+  // heavy
+  .h1-h-sm{
+    @include heading-style(h1,heavy)
+  };
+  .h2-h-sm{
+    @include heading-style(h2,heavy)
+  };
+  .h3-h-sm{
+    @include heading-style(h3,heavy)
+  };
+  .h4-h-sm{
+    @include heading-style(h4,heavy)
+  };
+  .h5-h-sm{
+    @include heading-style(h5,heavy)
+  };
+  .h6-h-sm{
+    @include heading-style(h6,heavy)
+  };
+  .text-title-sm{
+    @include text-body-style(title,normal );
+    font-weight: 800; // text ExtraBlack
+  };
+  // ___________________________________________________________
+  .text-sub-title-sm{
+    @include text-body-style(subTitle,normal ); // normal text subTitle
+  };
+  .text-sub-title-b-sm{
+    @include text-body-style(subTitle,bold ); // bold text subTitle
+  };
+  // ________________________________________________________________
+  .text-main-sm{
+    @include text-body-style(body,normal ); // normal text body
+  };
+  .text-main-b-sm{
+    @include text-body-style(body,bold ); // bold text body
+  };
+  // ________________________________________________________
+  .text-small-sm{
+    @include text-body-style(small,normal ); // normal text small
+  };
+  .text-small-b-sm{
+    @include text-body-style(small,bold ); // bold text small
+  };
+  // _________________________________________________________________
+  .text-caption-sm{
+    @include text-body-style(caption,normal ); // normal text caption
+  };
+  .text-caption-b-sm{
+    @include text-body-style(caption,bold ); // bold text caption
+  };
+  // _________________________________________________________________
+  .text-footnote-sm{
+    @include text-body-style(footnote,normal ); // normal text footnote
+  };
+  .text-footnote-b-sm{
+    @include text-body-style(footnote,bold ); // bold text footnote
+  };
+  // ______________________________________________________________
+  .text-tag-sm{
+    @include text-body-style(tag,normal ); // normal text tag
+  };
+  .text-tag-b-sm{
+    @include text-body-style(tag,bold ); // bold text tag
+  };
+
+}
+
+@media screen and (min-width:768px) {
+  .h1-md{
+    @include heading-style(h1,medium)
+  };
+  .h2-md{
+    @include heading-style(h2,medium)
+  };
+  .h3-md{
+    @include heading-style(h3,medium)
+  };
+  .h4-md{
+    @include heading-style(h4,medium)
+  };
+  .h5-md{
+    @include heading-style(h5,medium)
+  };
+  .h6-md{
+    @include heading-style(h6,medium)
+  };
+  // heavy
+  .h1-h-md{
+    @include heading-style(h1,heavy)
+  };
+  .h2-h-md{
+    @include heading-style(h2,heavy)
+  };
+  .h3-h-md{
+    @include heading-style(h3,heavy)
+  };
+  .h4-h-md{
+    @include heading-style(h4,heavy)
+  };
+  .h5-h-md{
+    @include heading-style(h5,heavy)
+  };
+  .h6-h-md{
+    @include heading-style(h6,heavy)
+  };
+  // bold
+  .h1-b-md{
+    @include heading-style(h1,bold)
+  };
+  .h2-b-md{
+    @include heading-style(h2,bold)
+  };
+  .h3-b-md{
+    @include heading-style(h3,bold)
+  };
+  .h4-b-md{
+    @include heading-style(h4,bold)
+  };
+  .h5-b-md{
+    @include heading-style(h5,bold)
+  };
+  .h6-b-md{
+    @include heading-style(h6,bold)
+  };
+  .text-title-md{
+    @include text-body-style(title,normal );
+    font-weight: 800; // text ExtraBlack
+  };
+  // ___________________________________________________________
+  .text-sub-title-md{
+    @include text-body-style(subTitle,normal ); // normal text subTitle
+  };
+  .text-sub-title-b-md{
+    @include text-body-style(subTitle,bold ); // bold text subTitle
+  };
+  // ________________________________________________________________
+  .text-main-md{
+    @include text-body-style(body,normal ); // normal text body
+  };
+  .text-main-b-md{
+    @include text-body-style(body,bold ); // bold text body
+  };
+  // ________________________________________________________
+  .text-small-md{
+    @include text-body-style(small,normal ); // normal text mdall
+  };
+  .text-small-b-md{
+    @include text-body-style(small,bold ); // bold text mdall
+  };
+  // _________________________________________________________________
+  .text-caption-md{
+    @include text-body-style(caption,normal ); // normal text caption
+  };
+  .text-caption-b-md{
+    @include text-body-style(caption,bold ); // bold text caption
+  };
+  // _________________________________________________________________
+  .text-footnote-md{
+    @include text-body-style(footnote,normal ); // normal text footnote
+  };
+  .text-footnote-b-md{
+    @include text-body-style(footnote,bold ); // bold text footnote
+  };
+  // ______________________________________________________________
+  .text-tag-md{
+    @include text-body-style(tag,normal ); // normal text tag
+  };
+  .text-tag-b-md{
+    @include text-body-style(tag,bold ); // bold text tag
+  };
+
+}
+@media screen and (min-width:1024px) {
+  .h1-lg{
+    @include heading-style(h1,medium)
+  };
+  .h2-lg{
+    @include heading-style(h2,medium)
+  };
+  .h3-lg{
+    @include heading-style(h3,medium)
+  };
+  .h4-lg{
+    @include heading-style(h4,medium)
+  };
+  .h5-lg{
+    @include heading-style(h5,medium)
+  };
+  .h6-lg{
+    @include heading-style(h6,medium)
+  };
+  // heavy
+  .h1-h-lg{
+    @include heading-style(h1,heavy)
+  };
+  .h2-h-lg{
+    @include heading-style(h2,heavy)
+  };
+  .h3-h-lg{
+    @include heading-style(h3,heavy)
+  };
+  .h4-h-lg{
+    @include heading-style(h4,heavy)
+  };
+  .h5-h-lg{
+    @include heading-style(h5,heavy)
+  };
+  .h6-h-lg{
+    @include heading-style(h6,heavy)
+  };
+  // bold
+  .h1-b-lg{
+    @include heading-style(h1,bold)
+  };
+  .h2-b-lg{
+    @include heading-style(h2,bold)
+  };
+  .h3-b-lg{
+    @include heading-style(h3,bold)
+  };
+  .h4-b-lg{
+    @include heading-style(h4,bold)
+  };
+  .h5-b-lg{
+    @include heading-style(h5,bold)
+  };
+  .h6-b-lg{
+    @include heading-style(h6,bold)
+  };
+  .text-title-lg{
+    @include text-body-style(title,normal );
+    font-weight: 800; // text ExtraBlack
+  };
+  // ___________________________________________________________
+  .text-sub-title-lg{
+    @include text-body-style(subTitle,normal ); // normal text subTitle
+  };
+  .text-sub-title-b-lg{
+    @include text-body-style(subTitle,bold ); // bold text subTitle
+  };
+  // ________________________________________________________________
+  .text-main-lg{
+    @include text-body-style(body,normal ); // normal text body
+  };
+  .text-main-b-lg{
+    @include text-body-style(body,bold ); // bold text body
+  };
+  // ________________________________________________________
+  .text-small-lg{
+    @include text-body-style(small,normal ); // normal text lgall
+  };
+  .text-small-b-lg{
+    @include text-body-style(small,bold ); // bold text lgall
+  };
+  // _________________________________________________________________
+  .text-caption-lg{
+    @include text-body-style(caption,normal ); // normal text caption
+  };
+  .text-caption-b-lg{
+    @include text-body-style(caption,bold ); // bold text caption
+  };
+  // _________________________________________________________________
+  .text-footnote-lg{
+    @include text-body-style(footnote,normal ); // normal text footnote
+  };
+  .text-footnote-b-lg{
+    @include text-body-style(footnote,bold ); // bold text footnote
+  };
+  // ______________________________________________________________
+  .text-tag-lg{
+    @include text-body-style(tag,normal ); // normal text tag
+  };
+  .text-tag-b-lg{
+    @include text-body-style(tag,bold ); // bold text tag
+  };
+
+}
+@media screen and (min-width:1200px) {
+  .h1-xl{
+    @include heading-style(h1,medium)
+  };
+  .h2-xl{
+    @include heading-style(h2,medium)
+  };
+  .h3-xl{
+    @include heading-style(h3,medium)
+  };
+  .h4-xl{
+    @include heading-style(h4,medium)
+  };
+  .h5-xl{
+    @include heading-style(h5,medium)
+  };
+  .h6-xl{
+    @include heading-style(h6,medium)
+  };
+  // heavy
+  .h1-h-xl{
+    @include heading-style(h1,heavy)
+  };
+  .h2-h-xl{
+    @include heading-style(h2,heavy)
+  };
+  .h3-h-xl{
+    @include heading-style(h3,heavy)
+  };
+  .h4-h-xl{
+    @include heading-style(h4,heavy)
+  };
+  .h5-h-xl{
+    @include heading-style(h5,heavy)
+  };
+  .h6-h-xl{
+    @include heading-style(h6,heavy)
+  };
+  // bold
+  .h1-b-xl{
+    @include heading-style(h1,bold)
+  };
+  .h2-b-xl{
+    @include heading-style(h2,bold)
+  };
+  .h3-b-xl{
+    @include heading-style(h3,bold)
+  };
+  .h4-b-xl{
+    @include heading-style(h4,bold)
+  };
+  .h5-b-xl{
+    @include heading-style(h5,bold)
+  };
+  .h6-b-xl{
+    @include heading-style(h6,bold)
+  }xl
+   .text-title-xl{
+     @include text-body-style(title,normal );
+     font-weight: 800; // text ExtraBlack
+   };
+  // ___________________________________________________________
+  .text-sub-title-xl{
+    @include text-body-style(subTitle,normal ); // normal text subTitle
+  };
+  .text-sub-title-b-xl{
+    @include text-body-style(subTitle,bold ); // bold text subTitle
+  };
+  // ________________________________________________________________
+  .text-main-xl{
+    @include text-body-style(body,normal ); // normal text body
+  };
+  .text-main-b-xl{
+    @include text-body-style(body,bold ); // bold text body
+  };
+  // ________________________________________________________
+  .text-small-xl{
+    @include text-body-style(small,normal ); // normal text xlall
+  };
+  .text-small-b-xl{
+    @include text-body-style(small,bold ); // bold text xlall
+  };
+  // _________________________________________________________________
+  .text-caption-xl{
+    @include text-body-style(caption,normal ); // normal text caption
+  };
+  .text-caption-b-xl{
+    @include text-body-style(caption,bold ); // bold text caption
+  };
+  // _________________________________________________________________
+  .text-footnote-xl{
+    @include text-body-style(footnote,normal ); // normal text footnote
+  };
+  .text-footnote-b-xl{
+    @include text-body-style(footnote,bold ); // bold text footnote
+  };
+  // ______________________________________________________________
+  .text-tag-xl{
+    @include text-body-style(tag,normal ); // normal text tag
+  };
+  .text-tag-b-xl{
+    @include text-body-style(tag,bold ); // bold text tag
+  };
+
+}
+@media screen and (min-width:1600px) {
+  .h1-xxl{
+    @include heading-style(h1,medium)
+  };
+  .h2-xxl{
+    @include heading-style(h2,medium)
+  };
+  .h3-xxl{
+    @include heading-style(h3,medium)
+  };
+  .h4-xxl{
+    @include heading-style(h4,medium)
+  };
+  .h5-xxl{
+    @include heading-style(h5,medium)
+  };
+  .h6-xxl{
+    @include heading-style(h6,medium)
+  };
+  .text-title-xxl{
+    @include text-body-style(title,normal );
+    font-weight: 800; // text ExtraBlack
+  };
+  // ___________________________________________________________
+  .text-sub-title-xxl{
+    @include text-body-style(subTitle,normal ); // normal text subTitle
+  };
+  .text-sub-title-b-xxl{
+    @include text-body-style(subTitle,bold ); // bold text subTitle
+  };
+  // ________________________________________________________________
+  .text-main-xxl{
+    @include text-body-style(body,normal ); // normal text body
+  };
+  .text-main-b-xxl{
+    @include text-body-style(body,bold ); // bold text body
+  };
+  // ________________________________________________________
+  .text-small-xxl{
+    @include text-body-style(small,normal ); // normal text xxlall
+  };
+  .text-small-b-xxl{
+    @include text-body-style(small,bold ); // bold text xxlall
+  };
+  // _________________________________________________________________
+  .text-caption-xxl{
+    @include text-body-style(caption,normal ); // normal text caption
+  };
+  .text-caption-b-xxl{
+    @include text-body-style(caption,bold ); // bold text caption
+  };
+  // _________________________________________________________________
+  .text-footnote-xxl{
+    @include text-body-style(footnote,normal ); // normal text footnote
+  };
+  .text-footnote-b-xxl{
+    @include text-body-style(footnote,bold ); // bold text footnote
+  };
+  // ______________________________________________________________
+  .text-tag-xxl{
+    @include text-body-style(tag,normal ); // normal text tag
+  };
+  .text-tag-b-xxl{
+    @include text-body-style(tag,bold ); // bold text tag
+  };
+
+}

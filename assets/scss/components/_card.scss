@@ -1,0 +1,304 @@
+// $card-max-width: (
+//   2xl:296px,
+//   xl:297.3px,
+//   lg:276px,
+//   md:314px,
+//   sm:352px,
+//   xs:360px,
+// );
+
+// $card-min-width: (
+//   2xl:243px,
+//   xl:217px,
+//   lg:232px,
+//   md:229px,
+//   sm:208px,
+//   xs:229px,
+// );
+
+// $discoverCardHeight: (
+//   sm:165px,
+//   md:185px,
+//   lg:205px,
+//   xl:225px,
+// );
+
+
+
+
+// @mixin card ($size) {
+//   max-width: map-get($card-max-width, $size);
+//   min-width: map-get($card-min-width, $size);
+//   border: 1px solid rgba(0, 0, 0, 0.10);
+//   border-radius: 10px;
+
+//   .header {
+//     width: 100%;
+//     border-radius: 10px 10px 0 0;
+//     position: relative;
+
+//     img {
+//       border-radius: 10px 10px 0 0;
+//       width: 100%;
+//       aspect-ratio: 16/9;
+//     }
+
+//     .timer {
+//       position: absolute;
+//       right: 8px;
+//       bottom: 8px;
+//       padding: 0 8px;
+//       border-radius: 4px;
+//       background: rgba(0, 0, 0, 0.50);
+//       color: rgba(255, 255, 255, 0.95);
+//     }
+//   }
+
+//   .body {
+//     width: 100%;
+//     max-height: 148px;
+//     padding: 16px;
+
+//     .title {
+//       width: 100%;
+//       height: 64px;
+//       text-overflow: ellipsis;
+//       overflow: hidden;
+
+//       p {
+//         color: #00091A;
+//         font-size: 16px;
+//         font-weight: 500;
+//         line-height: 32px;
+//       }
+//     }
+
+//     .info {
+//       color: #C1C7D0;
+//       font-size: 9.99px;
+//       font-weight: 500;
+//       line-height: 16px;
+
+//       a {
+//         color: #C1C7D0;
+//       }
+
+//       .date {
+//         display: flex;
+//         align-items: center;
+
+//         &::before {
+//           margin: 0 4px;
+//           display: inline-block;
+//           content: "";
+//           width: 4px;
+//           height: 4px;
+//           border-radius: 50%;
+//           background: #EBECF0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// ;
+
+// @mixin discoverCard($size) {
+//   .header {
+//     width: 100%;
+//     height: map-get($discoverCardHeight, $size);
+//     border-radius: 10px 10px 0 0;
+
+//     img {
+//       border-radius: 10px 10px 0 0;
+//       width: 100%;
+
+//       height: 100%;
+//       object-fit: cover;
+//     }
+//   }
+// }
+
+
+// .card {
+//   @include card(xs);
+//   transition: all 0.3s;
+// }
+
+// .card:hover {
+//   border: 1px solid var(--Primary-Color-4, #fa788b);
+//   background: var(--Neutral-Light-N0, #FFF);
+//   box-shadow: 0px 0px 0px 5px #FFF0F0;
+//   transition: all 0.3s;
+// }
+
+// .box-sm {
+//   .card {
+//     @include discoverCard(sm);
+//   }
+// }
+
+// .box-md {
+//   .card {
+//     @include discoverCard(md);
+//   }
+// }
+
+// .box-lg {
+//   .card {
+//     @include discoverCard(lg);
+//   }
+// }
+
+// .box-xl {
+//   .card {
+//     @include discoverCard(xl);
+//   }
+// }
+
+
+// @media screen and (min-width: 480px) {
+//   .card {
+//     @include card(sm);
+//   }
+
+// }
+
+// ;
+
+// @media screen and (min-width: 768px) {
+//   .card {
+//     @include card(md);
+//   }
+// }
+
+// ;
+
+// @media screen and (min-width: 1024px) {
+//   .card {
+//     @include card(lg);
+//   }
+// }
+
+// ;
+
+// @media screen and (min-width: 1200px) {
+//   .card {
+//     @include card(xl);
+//   }
+// }
+
+// ;
+
+// @media screen and (min-width: 1600px) {
+//   .card {
+//     @include card(2xl);
+//   }
+// }
+
+// ;
+
+// @mixin horizontalCard() {
+//   display: flex;
+//   height: 100px;
+
+//   .right-side {
+//     min-width: 160px;
+//     width: 166px;
+//     position: relative;
+//     border-radius: 10px;
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       border-radius: 10px;
+//     }
+
+//     .timer {
+//       position: absolute;
+//       right: 8px;
+//       bottom: 8px;
+//       padding: 0 8px;
+//       border-radius: 4px;
+//       background: rgba(0, 0, 0, 0.50);
+//       color: rgba(255, 255, 255, 0.95);
+//     }
+
+//     .label {
+//       position: absolute;
+//       top: 8px;
+//       right: 8px;
+//     }
+//   }
+
+//   .left-side {
+//     padding: 8px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+
+//     .title {
+//       width: 100%;
+//       max-height: 40px;
+//       text-overflow: ellipsis;
+//       overflow: hidden;
+
+//       p {
+//         color: #00091A;
+//         font-size: 11.24px;
+//         font-weight: 500;
+//         line-height: 20px;
+//       }
+//     }
+
+//     .info {
+//       color: #C1C7D0;
+//       font-size: 9.99px;
+//       font-weight: 500;
+//       line-height: 16px;
+//       text-overflow: ellipsis;
+//       overflow: hidden;
+//       max-height: 16px;
+
+//       a {
+//         color: #C1C7D0;
+//       }
+
+//       .date {
+//         display: flex;
+//         align-items: center;
+
+//         &::before {
+//           margin: 0 4px;
+//           display: inline-block;
+//           content: "";
+//           width: 4px;
+//           height: 4px;
+//           border-radius: 50%;
+//           background: #EBECF0;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// .horizontal-card {
+//   @include horizontalCard();
+//   transition: box-shadow 0.3s ease;
+//   padding: 4px;
+// }
+
+
+
+// .single-video{
+//   .horizontal-card:hover{
+//     border: 1px solid var(--Primary-Color-4, #fa788b);
+//     background: var(--Neutral-Light-N0, #FFF);
+//     box-shadow: 0px 0px 0px 5px #FFF0F0;
+//     border-radius: 10px;
+//     transition: box-shadow 0.3s ease;
+  
+  
+//   }
+// }

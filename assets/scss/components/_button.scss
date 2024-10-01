@@ -1,0 +1,61 @@
+
+$paddingBtn: (
+    sm: 12px,
+    md: 16px,
+);
+
+$height:(
+    xs:24px,
+    sm:32px,
+    md:40px,
+    lg:48px,
+    xl:56px,
+);
+$roundedBtn: (
+    xs:4px,
+    sm:6px,
+    md:8px,
+    lg:10px,
+    xl:12px,
+);
+
+
+@mixin btn($device, $padding) {
+    border: none;
+    outline: none;
+    padding: 0 map-get($paddingBtn , $padding);
+    border-radius: map-get($roundedBtn, $device);
+    height: map-get($height,$device);
+    background: #EE4562;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    p{
+        margin-right:4px;
+        margin-bottom: 0px; 
+    }
+    &:hover{
+        background: #fa788b;
+        transition: all 0.3s;
+    }
+};
+
+
+
+.btn-xs{
+    @include btn(xs,sm);
+}
+
+.btn-sm{
+    @include btn(sm,md);
+}
+.btn-md{
+    @include btn(md,md);
+}
+.btn-lg{
+    @include btn(lg,md);
+}
+.btn-xl{
+    @include btn(xl,md);
+}

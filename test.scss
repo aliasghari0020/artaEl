@@ -1,0 +1,52 @@
+$heading-line-height:(
+    h1: 72px,
+);
+$heading-weight:(
+    medium:500,
+    bold:800,
+    heavy:900,
+);
+/* Heading styles mixin */
+@mixin heading-style($size, $device){
+    font-size: map-get($heading-font-size,$size);
+    line-height: map-get($heading-line-height,$size);
+    font-weight: map-get($heading-weight , $device );
+};
+
+
+h1,.h1{
+    @include heading-style(h1,medium)
+};
+
+.h1-b{
+    @include heading-style(h1,bold)
+};
+.h1-h{
+    @include heading-style(h1,heavy)
+};
+
+@media screen and (min-width:480px) {
+
+    .h1-sm{
+        @include heading-style(h1,medium)
+    };
+    .h1-b-sm{
+        @include heading-style(h1,medium)
+    };
+    .h1-h-sm{
+        @include heading-style(h1,medium)
+    };
+}
+
+@media screen and (min-width:768px) {
+
+    .h1-md{
+        @include heading-style(h1,medium)
+    };
+    .h1-b-md{
+        @include heading-style(h1,medium)
+    };
+    .h1-h-md{
+        @include heading-style(h1,medium)
+    };
+}

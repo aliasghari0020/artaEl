@@ -1,0 +1,288 @@
+@import '../components/setting/spacers';
+@import '../components/setting/responsive';
+// customize spacer in /components/setting/spacers file
+
+$spacer: $my-spacer;
+$spacers: $my-spaceser;
+
+// customize grid-breakpoints in /components/setting/responsive file
+
+$grid-breakpoints: $my-grid-breakpoints;
+
+// customize container in /components/setting/responsive file
+
+$container-max-widths:$my-container-max-widths;
+
+
+// customize colors
+$my-null: null;
+$my-primary: #ee4562;
+$my-secondary: #ef9848;
+$my-enable-dark-mode: false;
+
+$my-colors: (
+  "blue": #1677ff,
+  "green": #52c41a,
+  "yellow": #faad14,
+  "red": #ff4d4f,
+);
+
+$my-theme-colors: (
+  "primary": #ee4562,
+  "secondary": #ef9848,
+  "success": #52c41a,
+  "info": #1677ff,
+  "warning": #faad14,
+  "danger": #ff4d4f,
+  "light": #000000e0,
+  "dark": #ffffffd9,
+);
+
+
+
+$enable-dark-mode: $my-enable-dark-mode;
+$primary: $my-primary;
+$secondary: $my-secondary;
+
+$theme-colors: $my-theme-colors;
+
+// customize settin spacer
+
+
+
+
+// customize border
+
+$my-border-color: #ebecf0;
+
+$my-border-radius: 6px;
+$my-border-radius-sm: 4px;
+$my-border-radius-lg: 8px;
+$my-border-radius-xl: 10px;
+$my-border-radius-xxl: 12px;
+$my-border-radius-2xl: 14px;
+$my-border-radius-pill: 50%;
+
+
+$border-color: $my-border-color;
+$border-radius: $my-border-radius;
+$border-radius-sm: $my-border-radius-sm;
+$border-radius-lg: $my-border-radius-lg;
+$border-radius-xl: $my-border-radius-xl;
+$border-radius-xxl: $my-border-radius-xxl;
+$border-radius-2xl: $my-border-radius-2xl;
+$border-radius-pill: $my-border-radius-pill;
+
+// font-family
+$my-enable-rfs: false;
+$my-font-family: "IRANYekanX";
+$my-null: null;
+$my-font-style: normal;
+$my-font-weight-normal: 500;
+$my-font-weights: (500, 800, 950);
+
+@each $weight in $my-font-weights {
+  @font-face {
+    font-family: $my-font-family;
+    font-style: $my-font-style;
+    font-weight: $weight;
+    src: url("./assets/fonts/woff/IRANYekanX-#{$weight}.woff") format("woff"),
+      url("./assets/fonts/ttf/IRANYekanX-#{$weight}.ttf") format("ttf"),
+      url("./assets/fonts/woff2/IRANYekanX-#{$weight}.woff2") format("woff2");
+  }
+}
+$font-weight-normal: $my-font-weight-normal;
+$font-family-base: $my-font-family;
+$font-family-code: $my-null;
+$enable-rfs: $my-enable-rfs;
+
+// Headings
+
+// This section defines the font size, font weight, and margin bottom for all headings.
+
+$my-h1-font-size: 41.5px; // Sets the font size for h1 headings to 41.5px.
+$my-h2-font-size: 36.49px; // Sets the font size for h2 headings to 36.49px.
+$my-h3-font-size: 32.44px; // Sets the font size for h3 headings to 32.44px.
+$my-h4-font-size: 28.82px; // Sets the font size for h4 headings to 28.82px.
+$my-h5-font-size: 25.36px; // Sets the font size for h5 headings to 25.36px.
+$my-h6-font-size: 22.78px; // Sets the font size for h6 headings to 22.78px.
+
+$my-headings-font-weight: 950; // Sets the font weight for all headings to 950, which is bold.
+
+$my-headings-margin-bottom: map-get(
+  $my-spaceser,
+  0
+); // Sets the margin bottom for all headings to 0.
+
+// This section uses the variables defined in the previous two sections to set the font size
+
+$h1-font-size: $my-h1-font-size;
+$h2-font-size: $my-h2-font-size;
+$h3-font-size: $my-h3-font-size;
+$h4-font-size: $my-h4-font-size;
+$h5-font-size: $my-h5-font-size;
+$h6-font-size: $my-h6-font-size;
+
+$headings-font-weight: $my-headings-font-weight;
+$headings-margin-bottom: $my-headings-margin-bottom;
+
+// link customizations
+$my-link-decoration:none;
+$link-decoration:$my-link-decoration;
+
+
+
+$my-input-btn-padding-x: map-get($spacers, 4);
+
+$btn-input-padding-x: $my-input-btn-padding-x;
+
+// scss-docs-start accordion-variables
+$my-accordion-padding-y: 12px;
+$my-accordion-padding-x: 16px;
+$my-accordion-border-color:#EBF1F5;
+$my-accordion-border-radius: 10px; 
+$my-accordion-color:#253858;
+$my-accordion-bg: #fff;
+$accordion-padding-y:             $my-accordion-padding-y;
+$accordion-padding-x:             $my-accordion-padding-x;
+$accordion-border-color:          $my-accordion-border-color;
+ $accordion-border-radius:        $my-accordion-border-radius;
+ $accordion-color:                $my-accordion-color;
+ $accordion-bg:                   $my-accordion-bg;
+$accordion-button-active-bg:                $my-accordion-bg;
+$accordion-button-active-color:             $my-accordion-color;
+
+$accordion-button-focus-border-color:     none;
+$accordion-button-focus-box-shadow:       none;
+$accordion-button-icon:url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'><path d='M6 9.73584L12 15.7358L18 9.73584' stroke='#545759' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+$accordion-button-active-icon:url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'><path d='M6 9.73584L12 15.7358L18 9.73584' stroke='#545759' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "mixins/banner";
+// @include bsBanner("");
+
+
+// scss-docs-start import-stack
+// Configuration
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+// @import "../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+// Layout & components
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+@import "../../../node_modules/bootstrap/scss/type";
+// @import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/containers";
+@import "../../../node_modules/bootstrap/scss/grid";
+// @import "../../../node_modules/bootstrap/scss/tables";
+// @import "../../../node_modules/bootstrap/scss/forms";
+// @import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+// @import "../../../node_modules/bootstrap/scss/button-group";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar";
+// @import "../../../node_modules/bootstrap/scss/card";
+@import "../../../node_modules/bootstrap/scss/accordion";
+@import "../../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../../node_modules/bootstrap/scss/pagination";
+@import "../../../node_modules/bootstrap/scss/badge";
+@import "../../../node_modules/bootstrap/scss/alert";
+@import "../../../node_modules/bootstrap/scss/progress";
+@import "../../../node_modules/bootstrap/scss/list-group";
+@import "../../../node_modules/bootstrap/scss/close";
+@import "../../../node_modules/bootstrap/scss/toasts";
+@import "../../../node_modules/bootstrap/scss/modal";
+// @import "../../../node_modules/bootstrap/scss/tooltip";
+@import "../../../node_modules/bootstrap/scss/popover";
+// @import "../../../node_modules/bootstrap/scss/carousel";
+// @import "../../../node_modules/bootstrap/scss/spinners";
+@import "../../../node_modules/bootstrap/scss/offcanvas";
+@import "../../../node_modules/bootstrap/scss/placeholders";
+
+// Helpers
+@import "../../../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../../../node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
