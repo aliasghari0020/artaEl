@@ -84,6 +84,7 @@
         &::-webkit-scrollbar {
           width: 8px; /* عرض اسکرول بار */
           border-radius: 8px;
+          height: 95%;
         }
 
         &::-webkit-scrollbar-track {
@@ -118,12 +119,10 @@
     }
   }
 
-  .menu-level-2 {
-    p {
+  .menu-level-2{
       display: flex;
       align-items: center;
       gap: 8px;
-
       &::after {
         content: "";
         display: block;
@@ -132,12 +131,7 @@
         background: #FC6F6A;
         border-radius: 4px;
       }
-    }
   }
 
-  .menu-level-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-  }
+
 }
