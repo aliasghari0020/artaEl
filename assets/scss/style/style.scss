@@ -13,6 +13,7 @@
 @use "../components/layout/mega-menu";
 @use "../components/setting/breadcrumb";
 @use "../page/category";
+@use"../components/layout/navBar";
 body {
     direction: rtl;
     overflow-x: hidden;

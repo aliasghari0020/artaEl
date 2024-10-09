@@ -45,11 +45,8 @@ const openCloseDesktopSearch = () => {
   })
 
 }
-openCloseDesktopSearch()
-const deleteSearchBtn = element('.delete-value-search');
-const desktopSearched = element('.searched');
-const desktopStep1 = element('.step-1');
-const desktopStep2 = element('.step-2');
+
+
 
 const mobileDeleteSearchBtn = element('.mobile-delete-value-search');
 const  mobileSearched = element('.mobile-searched');
@@ -80,7 +77,16 @@ const ResultsHandler = (searched, deleteBtn , step1, step2 )=>{
   })
 }
 
-ResultsHandler(desktopSearched , deleteSearchBtn , desktopStep1, desktopStep2);
+if(document.querySelector('.delete-value-search')){
+  const deleteSearchBtn = element('.delete-value-search');
+  const desktopSearched = element('.searched');
+  const desktopStep1 = element('.step-1');
+  const desktopStep2 = element('.step-2');
+
+  ResultsHandler(desktopSearched , deleteSearchBtn , desktopStep1, desktopStep2);
+  openCloseDesktopSearch()
+}
+
 // mobile
 ResultsHandler(mobileSearched , mobileDeleteSearchBtn , mobileStep1, mobileStep2);
 

@@ -1,0 +1,22 @@
+.navbar-bottom{
+    span{
+        color: #C1C7D0;
+    }
+    .active-icon{
+        display: none;
+    }
+    .normal-icon{
+        display: block;
+    }
+    &.active{
+        span{
+            color: #EF3F40;
+        }
+        .active-icon{
+            display: block;
+        }
+        .normal-icon{
+            display: none;
+        }
+    }
+}

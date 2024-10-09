@@ -63,4 +63,7 @@ function goToSlide(index) {
     }
   })
 }
-openCloseDesktopMegaMenu()
+if (window.innerWidth > 1024) {
+  openCloseDesktopMegaMenu()
+}
+
