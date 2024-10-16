@@ -1,5 +1,6 @@
 @import '../components/setting/spacers';
 @import '../components/setting/responsive';
+
 // customize spacer in /components/setting/spacers file
 
 $spacer: $my-spacer;
@@ -37,16 +38,11 @@ $my-theme-colors: (
   "light": #000000e0,
   "dark": #ffffffd9,
 );
-
-
-
 $enable-dark-mode: $my-enable-dark-mode;
 $primary: $my-primary;
 $secondary: $my-secondary;
-
 $theme-colors: $my-theme-colors;
-
-// customize settin spacer
+// customize setting spacer
 
 
 

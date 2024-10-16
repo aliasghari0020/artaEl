@@ -15,7 +15,9 @@ tablet:168px,
 mobile:156px,
 );
 
-
+.big-card{
+ border-bottom: 1px solid #ebecf0;
+}
 
 .grid-container {
  display: grid;
@@ -42,11 +44,18 @@ mobile:156px,
 }
 
 @media screen and (min-width:1024px) {
+
  .grid-container {
   grid-template-columns: repeat(auto-fill, minmax(map-get($category-icon-size , tablet), 7fr));
 
  }
  .border-section{
   border-radius: 10px 10px 0 0;
+ }
+}
+
+@media screen and (min-width:1200px) {
+ .big-card{
+  border: none;
  }
 }

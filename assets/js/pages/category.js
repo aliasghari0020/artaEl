@@ -58,3 +58,25 @@ window.addEventListener('resize', updateGridBorders);
 
 
 updateGridBorders();
+
+function createSwiperSupports(id) {
+  return new Swiper(id, {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // // Navigation arrows
+    navigation: {
+      nextEl: ".support-btn-prev",
+      prevEl: ".support-btn-next",
+    },
+    //
+    // // And if we need scrollbar
+    // scrollbar: {
+    //   el: '#slider-scrollbar',
+    // }
+  });
+}
+
+createSwiperSupports('#supports')
+createSwiperSupports('#mobile-supports')

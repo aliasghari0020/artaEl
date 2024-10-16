@@ -14,17 +14,14 @@
 @use "../components/setting/breadcrumb";
 @use "../page/category";
 @use"../components/layout/navBar";
+@use "../components/setting/toast";
 body {
     direction: rtl;
     overflow-x: hidden;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-
-}  ;
-
-
+} ;
 
 li {
     list-style-type: none;
@@ -57,19 +54,3 @@ img , svg{
     }
 }
 
-//&::-webkit-scrollbar {
-//    width: 12px; /* عرض اسکرول بار */
-//    border-radius: 8px;
-//}
-//&::-webkit-scrollbar-track {
-//    border-radius: 8px;
-//    background: var(--Colors-Nutrals-Mixed-Light-N20, #F4F5F7);
-//}
-//&::-webkit-scrollbar-thumb {
-//    background: #C1C7D0; /* رنگ اسکرول بار */
-//    border-radius: 8px; /* گرد کردن گوشه‌های اسکرول بار */
-//}
-//
-//&::-webkit-scrollbar-thumb:hover {
-//    background: #C1C7D0;
-//}
