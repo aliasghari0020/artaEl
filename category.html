@@ -1071,7 +1071,7 @@
     </div>
 </header>
 <div class="mx-auto" style="max-width: 1920px">
-    <main>
+    <main class="position-relative">
         <div class="px-xxl-15 px-xl-12 px-lg-10">
             <!-- title  section-->
             <section class="my-4">
@@ -2383,17 +2383,17 @@
                         </a>
 
                     </div>
-                    <div class="d-none justify-content-center d-lg-flex ">
-                        <div class="my-4 py-2 px-4 border justify-content-between align-items-center d-flex rounded-4 gap-18">
+                    <div class="d-flex justify-content-center ">
+                        <div class="my-4 py-2 px-2 px-sm-4 border justify-content-between align-items-center d-flex rounded-4 gap-lg-18 gap-4">
                             <a href="#">
-                                <div class="d-flex gap-2 py-1 px-2 align-items-center">
+                                <div class=" gap-2 py-1 px-2 align-items-center ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none">
                                         <path d="M6.44043 13.8813L10.7871 9.53462C11.3004 9.02129 11.3004 8.18129 10.7871 7.66796L6.44043 3.32129"
                                               stroke="black" stroke-width="1.5" stroke-miterlimit="10"
                                               stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <span class="mb-0 text-caption text-black">صفحه قبل</span>
+                                    <span class="mb-0 text-caption text-black d-none d-lg-flex ">صفحه قبل</span>
                                 </div>
                             </a>
                             <div class="d-flex gap-1_5">
@@ -2432,8 +2432,8 @@
                                 </a>
                             </div>
                             <a href="#">
-                                <div class="d-flex gap-2 py-1 px-2 align-items-center">
-                                    <span class="mb-0 text-caption text-black"> صفحه بعد</span>
+                                <div class=" gap-2 py-1 px-2 align-items-center">
+                                    <span class="mb-0 text-caption d-none d-lg-flex text-black"> صفحه بعد</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
                                          fill="none">
                                         <path d="M10.5002 13.8813L6.15355 9.53462C5.64022 9.02129 5.64022 8.18129 6.15355 7.66796L10.5002 3.32129"
@@ -2445,19 +2445,17 @@
                         </div>
                     </div>
                 </section>
-
-
             </div>
         </div>
         <!--category about-->
-        <div class="d-flex about-category">
+        <div class="d-flex about-category ">
             <div class="container p-0 pe-6 ">
                 <div class="title__about-category flex-grow-1 d-flex align-items-center gap-6">
-                    <h3 class="text-sub-title-b-lg flex-grow-1 text-nowrap">درباره دسته‌بندی</h3>
+                    <h3 class=" text-sub-title-b-lg  text-main-b flex-grow-1 text-nowrap">درباره دسته‌بندی</h3>
                     <div class="w-100" style="height: 1px ; background: #EBECF0"></div>
                 </div>
                 <div class="text__about-category mt-2">
-                    <p class="text-main mb-0 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+                    <p class="text-main-lg text-small mb-0 ">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
                         از طراحان گرافیک است،
                         چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی
                         مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
@@ -2465,8 +2463,8 @@
                 <div class="content__about-category">
                     <div class="d-flex gap-2 align-items-center cursor-pointer collapsed" data-bs-toggle="collapse"
                          data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        <p class="text-sub-title mb-0 blue-6 close_about-category">مشاهده همه </p>
-                        <p class="text-sub-title mb-0 blue-6 open_about-category">بستن توضیحات</p>
+                        <p class="text-sub-title-lg  text-small mb-0 blue-6 close_about-category">مشاهده همه </p>
+                        <p class="text-sub-title-lg  text-small mb-0 blue-6 open_about-category">بستن توضیحات</p>
                         <div class="icon__about-category">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
@@ -2480,6 +2478,39 @@
                             <h2>توضیحات</h2>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="position-fixed" style="bottom: 40px; left: 60px" data-bs-toggle="modal" data-bs-target="#support-modal">
+            <div class="d-none d-lg-flex px-4 gap-2 bg-primary-base rounded-3 py-2 cursor-pointer">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <g clip-path="url(#clip0_2814_156070)">
+                            <path d="M4.10156 10.7187V20.6171M4.10155 18.9765C4.10155 18.9765 0.820312 20.5624 0.820312 15.6406C0.820312 10.7187 4.10155 12.3593 4.10155 12.3593M4.10155 10.7187V20.6171H7.38279V10.7187H4.10155ZM4.10155 10.7187C4.10155 5.2822 8.56344 0.820312 14 0.820312C19.4365 0.820312 23.8984 5.2822 23.8984 10.7187M23.8984 10.7187V20.6171M23.8984 10.7187H20.6171V20.6171H23.8984M23.8984 20.6171L23.8984 22.2578C23.8984 24.0699 22.4293 25.539 20.6171 25.539H17.2812M23.8984 18.9765C23.8984 18.9765 27.1796 20.5624 27.1796 15.6406C27.1796 10.7187 23.8984 12.3593 23.8984 12.3593M17.2812 25.539C17.2812 24.6329 16.5466 23.8984 15.6406 23.8984H14C13.0939 23.8984 12.3593 24.6329 12.3593 25.539C12.3593 26.445 13.0939 27.1796 14 27.1796H15.6406C16.5466 27.1796 17.2812 26.4451 17.2812 25.539Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2814_156070">
+                                <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <p class="mb-0 text-small text-white">پشتیبانی</p>
+            </div>
+        </div>
+        <div class="position-fixed" style="bottom: 16px; left: 16px" data-bs-toggle="offcanvas" data-bs-target="#supportMobile" aria-controls="offcanvasBottom">
+            <div class="d-flex d-lg-none px-4 gap-2 bg-primary-base rounded-3 py-2 cursor-pointer">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <g clip-path="url(#clip0_2814_156070)">
+                            <path d="M4.10156 10.7187V20.6171M4.10155 18.9765C4.10155 18.9765 0.820312 20.5624 0.820312 15.6406C0.820312 10.7187 4.10155 12.3593 4.10155 12.3593M4.10155 10.7187V20.6171H7.38279V10.7187H4.10155ZM4.10155 10.7187C4.10155 5.2822 8.56344 0.820312 14 0.820312C19.4365 0.820312 23.8984 5.2822 23.8984 10.7187M23.8984 10.7187V20.6171M23.8984 10.7187H20.6171V20.6171H23.8984M23.8984 20.6171L23.8984 22.2578C23.8984 24.0699 22.4293 25.539 20.6171 25.539H17.2812M23.8984 18.9765C23.8984 18.9765 27.1796 20.5624 27.1796 15.6406C27.1796 10.7187 23.8984 12.3593 23.8984 12.3593M17.2812 25.539C17.2812 24.6329 16.5466 23.8984 15.6406 23.8984H14C13.0939 23.8984 12.3593 24.6329 12.3593 25.539C12.3593 26.445 13.0939 27.1796 14 27.1796H15.6406C16.5466 27.1796 17.2812 26.4451 17.2812 25.539Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_2814_156070">
+                                <rect width="28" height="28" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -3444,7 +3475,9 @@
                 </svg>
             </div>
         </div>
-        <div class="d-flex position-relative px-4 gap-2 py-3 align-items-center flex-grow-1 bg-neutral-light-10 rounded-4 ">
+        <div class="d-flex position-relative px-4 gap-2 py-3 align-items-center flex-grow-1 bg-neutral-light-10 rounded-4 "
+             data-bs-toggle="offcanvas" data-bs-target="#call-mobile" aria-controls="offcanvasBottom"
+        >
             <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M9 2C6.38 2 4.25 4.13 4.25 6.75C4.25 9.32 6.26 11.4 8.88 11.49C8.96 11.48 9.04 11.48 9.1 11.49C9.12 11.49 9.13 11.49 9.15 11.49C9.16 11.49 9.16 11.49 9.17 11.49C11.73 11.4 13.74 9.32 13.75 6.75C13.75 4.13 11.62 2 9 2Z" fill="#253858"/>
@@ -3496,6 +3529,71 @@
         </div>
     </div>
 
+</div>
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="support-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="p-6 border-bottom border-1 ">
+                <div data-bs-dismiss="modal" aria-label="Close" class="cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17 7L7 17M7 7L17 17" stroke="#253858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="px-10 pb-10 pt-4 d-flex flex-column gap-2">
+                <div>
+                    <p class="text-sub-title-b text-black  mb-0">پشتیبانی آرتا الکتریک</p>
+                    <p class="text-small neutral-pure-700 mb-6">توضیحات مربوط به اطلاع رساین</p>
+                </div>
+                <div class="d-flex position-relative px-4 gap-2 py-3 align-items-center flex-grow-1 bg-neutral-light-10 rounded-4 ">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M17 2H7C4.24 2 2 4.23 2 6.98V12.96V13.96C2 16.71 4.24 18.94 7 18.94H8.5C8.77 18.94 9.13 19.12 9.3 19.34L10.8 21.33C11.46 22.21 12.54 22.21 13.2 21.33L14.7 19.34C14.89 19.09 15.19 18.94 15.5 18.94H17C19.76 18.94 22 16.71 22 13.96V6.98C22 4.23 19.76 2 17 2ZM8 12C7.44 12 7 11.55 7 11C7 10.45 7.45 10 8 10C8.55 10 9 10.45 9 11C9 11.55 8.56 12 8 12ZM12 12C11.44 12 11 11.55 11 11C11 10.45 11.45 10 12 10C12.55 10 13 10.45 13 11C13 11.55 12.56 12 12 12ZM16 12C15.44 12 15 11.55 15 11C15 10.45 15.45 10 16 10C16.55 10 17 10.45 17 11C17 11.55 16.56 12 16 12Z" fill="#253858"/>
+                        </svg>
+                    </div>
+                    <div class="flex-grow-1">
+                        <p class="mb-0 text-caption-b neutral-pure-700">چت آنلاین</p>
+                        <p class="mb-0 text-tag">6 کارشناس آنلاین</p>
+                    </div>
+                    <div class="z-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M10.0002 13.2797L5.65355 8.93306C5.14022 8.41973 5.14022 7.57973 5.65355 7.06639L10.0002 2.71973" stroke="#7A869A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="position-absolute bottom-0 start-0 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="48" viewBox="0 0 64 48" fill="none">
+                            <path d="M45.3335 5.33301H18.6668C11.3068 5.33301 5.3335 11.2797 5.3335 18.613V34.5597V37.2263C5.3335 44.5597 11.3068 50.5063 18.6668 50.5063H22.6668C23.3868 50.5063 24.3468 50.9863 24.8002 51.573L28.8002 56.8797C30.5602 59.2263 33.4402 59.2263 35.2002 56.8797L39.2002 51.573C39.7068 50.9063 40.5068 50.5063 41.3335 50.5063H45.3335C52.6935 50.5063 58.6668 44.5597 58.6668 37.2263V18.613C58.6668 11.2797 52.6935 5.33301 45.3335 5.33301ZM21.3335 31.9997C19.8402 31.9997 18.6668 30.7997 18.6668 29.333C18.6668 27.8663 19.8668 26.6663 21.3335 26.6663C22.8002 26.6663 24.0002 27.8663 24.0002 29.333C24.0002 30.7997 22.8268 31.9997 21.3335 31.9997ZM32.0002 31.9997C30.5068 31.9997 29.3335 30.7997 29.3335 29.333C29.3335 27.8663 30.5335 26.6663 32.0002 26.6663C33.4668 26.6663 34.6668 27.8663 34.6668 29.333C34.6668 30.7997 33.4935 31.9997 32.0002 31.9997ZM42.6668 31.9997C41.1735 31.9997 40.0002 30.7997 40.0002 29.333C40.0002 27.8663 41.2002 26.6663 42.6668 26.6663C44.1335 26.6663 45.3335 27.8663 45.3335 29.333C45.3335 30.7997 44.1602 31.9997 42.6668 31.9997Z" fill="#F4F5F7"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="d-flex position-relative px-4 gap-2 py-3 align-items-center flex-grow-1 bg-neutral-light-10 rounded-4 ">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z" fill="#253858"/>
+                            <path d="M21.9701 18.33C21.9701 18.61 21.9201 18.9 21.8201 19.18C21.7901 19.26 21.7601 19.34 21.7201 19.42C21.5501 19.78 21.3301 20.12 21.0401 20.44C20.5501 20.98 20.0101 21.37 19.4001 21.62C19.3901 21.62 19.3801 21.63 19.3701 21.63C18.7801 21.87 18.1401 22 17.4501 22C16.4301 22 15.3401 21.76 14.1901 21.27C13.0401 20.78 11.8901 20.12 10.7501 19.29C10.3601 19 9.9701 18.71 9.6001 18.4L12.8701 15.13C13.1501 15.34 13.4001 15.5 13.6101 15.61C13.6601 15.63 13.7201 15.66 13.7901 15.69C13.8701 15.72 13.9501 15.73 14.0401 15.73C14.2101 15.73 14.3401 15.67 14.4501 15.56L15.2101 14.81C15.4601 14.56 15.7001 14.37 15.9301 14.25C16.1601 14.11 16.3901 14.04 16.6401 14.04C16.8301 14.04 17.0301 14.08 17.2501 14.17C17.4701 14.26 17.7001 14.39 17.9501 14.56L21.2601 16.91C21.5201 17.09 21.7001 17.3 21.8101 17.55C21.9101 17.8 21.9701 18.05 21.9701 18.33Z" fill="#253858"/>
+                        </svg>
+                    </div>
+                    <div class="flex-grow-1">
+                        <p class="mb-0 text-caption-b neutral-pure-700">تماس مستقیم با آرتا الکتریک </p>
+                        <p class="mb-0 text-tag"> 021-1235687</p>
+                    </div>
+                    <div class="z-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M10.0002 13.2797L5.65355 8.93306C5.14022 8.41973 5.14022 7.57973 5.65355 7.06639L10.0002 2.71973" stroke="#7A869A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="position-absolute bottom-0 start-0 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="48" viewBox="0 0 64 48" fill="none">
+                            <path d="M29.4668 39.8663L24.5335 44.7997C23.4935 45.8397 21.8402 45.8397 20.7735 44.8263C20.4802 44.533 20.1868 44.2663 19.8935 43.973C17.1468 41.1997 14.6668 38.293 12.4535 35.253C10.2668 32.213 8.50683 29.173 7.22683 26.1597C5.9735 23.1197 5.3335 20.213 5.3335 17.4397C5.3335 15.6263 5.6535 13.893 6.2935 12.293C6.9335 10.6663 7.94683 9.17301 9.36016 7.83967C11.0668 6.15967 12.9335 5.33301 14.9068 5.33301C15.6535 5.33301 16.4002 5.49301 17.0668 5.81301C17.7602 6.13301 18.3735 6.61301 18.8535 7.30634L25.0402 16.0263C25.5202 16.693 25.8668 17.3063 26.1068 17.893C26.3468 18.453 26.4802 19.013 26.4802 19.5197C26.4802 20.1597 26.2935 20.7997 25.9202 21.413C25.5735 22.0263 25.0668 22.6663 24.4268 23.3063L22.4002 25.413C22.1068 25.7063 21.9735 26.053 21.9735 26.4797C21.9735 26.693 22.0002 26.8797 22.0535 27.093C22.1335 27.3063 22.2135 27.4663 22.2668 27.6263C22.7468 28.5063 23.5735 29.653 24.7468 31.0397C25.9468 32.4263 27.2268 33.8397 28.6135 35.253C28.8802 35.5197 29.1735 35.7863 29.4402 36.053C30.5068 37.093 30.5335 38.7997 29.4668 39.8663Z" fill="#F4F5F7"/>
+                            <path d="M58.5868 48.8804C58.5868 49.6271 58.4534 50.4004 58.1868 51.1471C58.1068 51.3604 58.0268 51.5738 57.9201 51.7871C57.4668 52.7471 56.8801 53.6538 56.1068 54.5071C54.8001 55.9471 53.3601 56.9871 51.7334 57.6538C51.7068 57.6538 51.6801 57.6804 51.6534 57.6804C50.0801 58.3204 48.3734 58.6671 46.5334 58.6671C43.8134 58.6671 40.9068 58.0271 37.8401 56.7204C34.7734 55.4138 31.7068 53.6538 28.6668 51.4404C27.6268 50.6671 26.5868 49.8938 25.6001 49.0671L34.3201 40.3471C35.0668 40.9071 35.7334 41.3338 36.2934 41.6271C36.4268 41.6804 36.5868 41.7604 36.7734 41.8404C36.9868 41.9204 37.2001 41.9471 37.4401 41.9471C37.8934 41.9471 38.2401 41.7871 38.5334 41.4938L40.5601 39.4938C41.2268 38.8271 41.8668 38.3204 42.4801 38.0004C43.0934 37.6271 43.7068 37.4404 44.3734 37.4404C44.8801 37.4404 45.4134 37.5471 46.0001 37.7871C46.5868 38.0271 47.2001 38.3738 47.8668 38.8271L56.6934 45.0938C57.3868 45.5738 57.8668 46.1338 58.1601 46.8004C58.4268 47.4671 58.5868 48.1338 58.5868 48.8804Z" fill="#F4F5F7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="./assets/swiper/swiper-bundle.min.js"></script>
