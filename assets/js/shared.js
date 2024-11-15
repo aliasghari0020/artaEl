@@ -21,28 +21,28 @@ function toggleClass(selector, action, className, newClassName = '',) {
   }
 }
 
-function createSwiperSlider() {
-  return new Swiper("#slider", {
+
+function createSwiperSlider(name , prev , next , dot , scroll) {
+  return new Swiper(name, {
     // Optional parameters
     loop: true,
-    autoplay: {
-      delay: 5000,
-
-    },
+    // autoplay: {
+    //   delay: 5000,
+    // },
     // If we need pagination
     pagination: {
-      el: '#slider-pagination',
+      el: dot,
     },
 
     // Navigation arrows
     navigation: {
-      nextEl: "#slider-next",
-      prevEl: "#slider-prev",
+      nextEl:next,
+      prevEl: prev,
     },
 
     // And if we need scrollbar
     scrollbar: {
-      el: '#slider-scrollbar',
+      el: scroll,
     }
   });
 }

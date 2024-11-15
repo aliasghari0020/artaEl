@@ -1,9 +1,9 @@
-.special-next{
+.special-next , .another-next{
 left: -19px;
  transition: opacity 0.3s;
  transform: translateY(-50%);
 }
-.special-prev {
+.special-prev , .another-prev{
  right: -19px;
  transition: opacity 0.3s;
  transform: translateY(-50%);

@@ -1,12 +1,12 @@
 
 // scroll x story  in shared
-const slider = createSwiperSlider();
+const slider = createSwiperSlider('#slider' , '#slider-prev' , '#slider-next' , '#slider-pagination' , '#slider-scrollbar');
+
 function updateSlidesPerView() {
   const containerWidth = document.querySelector('.a').clientWidth;
   const slideWidth = 289; // عرض هر اسلاید
   const spaceBetween = 0; // فاصله بین اسلایدها
   const slidesPerView = (containerWidth + spaceBetween) / (slideWidth + spaceBetween);
-
   swiper5.params.slidesPerView = slidesPerView;
   swiper5.update();
 }

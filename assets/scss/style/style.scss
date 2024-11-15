@@ -15,6 +15,10 @@
 @use "../page/category";
 @use"../components/layout/navBar";
 @use "../components/setting/toast";
+@use "../components/textFiled";
+@use "../components/select";
+@use"../page/single";
+@use "../components/contetnt";
 body {
     direction: rtl;
     overflow-x: hidden;
@@ -51,6 +55,18 @@ img , svg{
 @media screen and (max-width: 1024px){
     .rounded-xs-0{
         border-radius: 0 !important;
+    }
+    .border-xs-0{
+        border: none !important;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .rounded-xl-0{
+        border-radius: 0 !important;
+    }
+    .border-xl-0{
+        border: none !important;
     }
 }
 

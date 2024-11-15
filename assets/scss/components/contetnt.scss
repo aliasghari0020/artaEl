@@ -1,0 +1,57 @@
+@import "setting/typographp";
+
+.content-container {
+  transition: height 0.4s ease;
+  .content-title {
+    h2 {
+      @include heading-style(h6, bold)
+    }
+
+    h3 {
+      @include text-body-style(title, normal);
+      font-weight: 800; // text ExtraBlack
+    }
+
+    h4 {
+      @include text-body-style(subTitle, normal); // normal text subTitle
+
+    }
+
+    h5 {
+      @include text-body-style(body, normal);
+    }
+  }
+
+  .content-text {
+    p {
+      @include text-body-style(body, normal);
+      margin-bottom: 0 !important;
+      color: #253858 !important;
+    }
+    ul {
+      padding: 0 16px !important;
+      margin: 0 16px !important;
+
+      li {
+        list-style-type: initial !important;
+        @include text-body-style(body, normal);
+        color: #253858 !important;
+      }
+    }
+
+    a {
+      @include text-body-style(body, normal);
+      color: #1677FF !important;
+    }
+  }
+
+  .content-image{
+    aspect-ratio: 5/4;
+    padding: 0 10%;
+    img{
+      aspect-ratio: 1/1;
+      width: 100%;
+    }
+  }
+
+}
