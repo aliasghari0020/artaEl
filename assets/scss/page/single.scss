@@ -90,38 +90,6 @@
   }
 
 }
-
-input[type="checkbox"] {
-  position: relative;
-  appearance: none;
-  width: 40px;
-  height: 22px;
-  background: #dfe1e6;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-input:checked[type="checkbox"] {
-  background: #EF3F40;
-}
-
-input[type="checkbox"]::after {
-  position: absolute;
-  content: "";
-  width: 18px;
-  height: 18px;
-  top: 2px;
-  right: 2px;
-  background: #fff;
-  border-radius: 50%;
-  transition: 0.4s;
-}
-
-input:checked[type="checkbox"]::after {
-  right: 20px;
-}
-
 .main-product {
   .right-side {
     width: 100%;
@@ -271,10 +239,16 @@ input:checked[type="checkbox"]::after {
 }
 
 .color-select {
+  border-radius: 6px;
+  border: 1px solid  #EBECF0;
+  &.active{
+    border: 1px solid  #EF3F40;
+  }
   div {
     width: 20px;
     height: 20px;
   }
+
 }
 
 .content-product {
@@ -327,5 +301,107 @@ input:checked[type="checkbox"]::after {
     .comment-item{
       max-width: 100%;
     }
+  }
+}
+.send{
+  background: #EF3F40;
+  color: #fff;
+  &.disable{
+    background: #DFE1E6;
+    color: #A5ADBA;
+  }
+}
+#notifyModal , #notifyMobile{
+  .item{
+    background: #FAFBFC;
+    &.active{
+      background: #FFF2F0;
+      svg{
+        path{
+          fill: #FFE9E6;
+        }
+      }
+    }
+  }
+
+}
+
+#addPost , #post-mobile{
+  .main-content{
+    max-height: 500px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+     position: absolute;
+      left: 20px;
+      width: 8px; /* عرض اسکرول بار */
+      border-radius: 8px;
+      height: 95%;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 8px;
+      background: var(--Colors-Nutrals-Mixed-Light-N20, #F4F5F7);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #C1C7D0;
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #C1C7D0;
+    }
+  }
+  .emoji{
+    border: 1px solid #EBECF0;
+    border-radius: 8px;
+    cursor: pointer;
+    p{
+      color: #7A869A;
+    }
+    img{
+      filter: grayscale(100%);
+      width: 32px;
+    }
+    &.active{
+      border: 1px solid #253858;
+      p{
+        color: #253858;
+      }
+      img{
+        filter: grayscale(0);
+      }
+
+      @media screen and (min-width: 360px) {
+        img{
+          width: 40px;
+        }
+      }
+
+    }
+
+
+
+
+
+  }
+  .add-action{
+    .input-item{
+      height: 48px;
+      border-radius: 4px;
+      border: 1px solid #EBECF0;
+      input{
+        border: none;
+        outline: none;
+        &::placeholder{
+          color: #DFE1E6;
+        }
+      }
+      button{
+        height: 24px;
+      }
+    }
+
+
   }
 }

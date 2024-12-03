@@ -19,6 +19,9 @@
 @use "../components/select";
 @use"../page/single";
 @use "../components/contetnt";
+@use "../components/switch";
+@use "../components/checked";
+
 body {
     direction: rtl;
     overflow-x: hidden;

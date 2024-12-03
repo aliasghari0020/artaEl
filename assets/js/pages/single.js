@@ -1,6 +1,6 @@
-
 scrollCostume('.video-list');
-const slider = createSwiperSlider('#product-slider' , '#slider-prev' , '#slider-next' , '#slider-pagination' , '#slider-scrollbar');
+const slider = createSwiperSlider('#product-slider', '#slider-prev', '#slider-next', '#slider-pagination', '#slider-scrollbar');
+
 // scroll x story  in shared
 function initSwiper(containerSelector, nextButtonSelector, prevButtonSelector, slideWidth) {
   function updateSlidesPerView() {
@@ -11,7 +11,7 @@ function initSwiper(containerSelector, nextButtonSelector, prevButtonSelector, s
     swiper.update();
   }
 
-  var swiper = new Swiper(containerSelector, {
+  const swiper = new Swiper(containerSelector, {
     freeMode: true,
     navigation: {
       nextEl: nextButtonSelector,
@@ -53,12 +53,12 @@ function initSwiper(containerSelector, nextButtonSelector, prevButtonSelector, s
 }
 
 // مثال: ایجاد چند اسلایدر مختلف
-var swiper1 = initSwiper('#product-crousle', '.special-next', '.special-prev', 289);
-var swiper2 = initSwiper('#another-crousle', '.another-next', '.another-prev', 289);
+const swiper1 = initSwiper('#product-crousle', '.special-next', '.special-prev', 289);
+const swiper2 = initSwiper('#another-crousle', '.another-next', '.another-prev', 289);
 document.addEventListener('DOMContentLoaded', function () {
-  var selectSelected = document.querySelector('.select-selected');
-  var selectItems = document.querySelector('.select-items');
-  var options = document.querySelectorAll('.option');
+  const selectSelected = document.querySelector('.select-selected');
+  const selectItems = document.querySelector('.select-items');
+  const options = document.querySelectorAll('.option');
   const text = selectSelected.querySelector('p');
   const icon = selectSelected.querySelector('.icon-select')
   selectSelected.addEventListener('click', function () {
@@ -81,8 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const pieCharts = document.querySelector('.pie-chart');
   const lineCharts = document.querySelectorAll('.line-chart');
 
@@ -95,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const active = line.querySelector('.active');
     let color;
     text.innerHTML = lineActive;
-
     if (lineActive <= 25) {
       color = '#FF4D4F';
     } else if (lineActive <= 50) {
@@ -113,59 +111,55 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   const averageLinePercentage = totalLinePercentage / lineChartCount;
-  console.log(`Average Line Chart Percentage: ${averageLinePercentage}`);
-
-    const text = pieCharts.querySelector('.text-chart');
-    let color;
-    text.innerHTML = averageLinePercentage;
-
-    if (averageLinePercentage <= 25) {
-      color = '#FF4D4F';
-    } else if (averageLinePercentage <= 50) {
-      color = '#FAAD14';
-    } else if (averageLinePercentage <= 75) {
-      color = '#1AC48B';
-    } else {
-      color = '#1677FF';
-    }
+  const text = pieCharts.querySelector('.text-chart');
+  let color;
+  text.innerHTML = averageLinePercentage;
+  if (averageLinePercentage <= 25) {
+    color = '#FF4D4F';
+  } else if (averageLinePercentage <= 50) {
+    color = '#FAAD14';
+  } else if (averageLinePercentage <= 75) {
+    color = '#1AC48B';
+  } else {
+    color = '#1677FF';
+  }
 
   pieCharts.style.background = `conic-gradient(${color} calc(${averageLinePercentage} * 1%), #F4F5F7 0%)`;
 
 });
 
-
-const filterTable = ()=>{
-  const items =  document.querySelectorAll('tbody tr');
+const filterTable = () => {
+  const items = document.querySelectorAll('tbody tr');
   const showBtn = document.querySelector('.show-all-item-table ');
   const arrow = showBtn.querySelector('.arrow');
   const textShowBtn = showBtn.querySelector("p")
-  items.forEach((item, index)=>{
-      if(index-1>= 6){
-        showBtn.classList.remove('d-none');
-        showBtn.classList.add('d-flex');
-        item.classList.add('d-none')
-        showBtn.addEventListener('click', ()=>{
-          item.classList.toggle('d-none')
-          arrow.classList.toggle('active')
-          if(arrow.classList.contains('active')){
-            textShowBtn.innerHTML='مشخصات کم تر'
+  items.forEach((item, index) => {
+    if (index - 1 >= 6) {
+      showBtn.classList.remove('d-none');
+      showBtn.classList.add('d-flex');
+      item.classList.add('d-none')
+      showBtn.addEventListener('click', () => {
+        item.classList.toggle('d-none')
+        arrow.classList.toggle('active')
+        if (arrow.classList.contains('active')) {
+          textShowBtn.innerHTML = 'مشخصات کم تر'
 
-          }else {
-            textShowBtn.innerHTML='همه مشخصات'
-          }
-        })
-      }
+        } else {
+          textShowBtn.innerHTML = 'همه مشخصات'
+        }
+      })
+    }
   })
 }
-const filterContent = ()=>{
+const filterContent = () => {
   const content = document.querySelector('.content-container');
-  const btn  = document.querySelector('.show-btn-content');
-  if(window.innerWidth <= 1024 && content.clientHeight){
+  const btn = document.querySelector('.show-btn-content');
+  if (window.innerWidth <= 1024 && content.clientHeight) {
     content.style.height = '256px';
     content.style.overflowY = 'hidden';
     btn.classList.remove('d-none');
     btn.classList.add('d-flex');
-    btn.addEventListener('click', ()=>{
+    btn.addEventListener('click', () => {
       content.style.height = 'auto';
       content.style.overflowY = 'auto';
       btn.classList.remove('d-flex');
@@ -173,5 +167,40 @@ const filterContent = ()=>{
     })
   }
 }
+
+const activeItemNotifyModal = (id) => {
+  const items = document.querySelectorAll(id);
+  items.forEach((item) => {
+    const input = item.querySelector('.checkbox-custom')
+    item.addEventListener('click', () => {
+      input.checked = !input.checked
+      if (input.checked) {
+        item.classList.add('active')
+      } else {
+        item.classList.remove('active')
+      }
+    })
+
+  })
+}
+
+const selectEmoji = () => {
+  const emojis = document.querySelectorAll('.emoji');
+  emojis.forEach(emoji => {
+    emoji.addEventListener('click', () => {
+      removeAll()
+      emoji.classList.toggle('active');
+    })
+  })
+
+  const removeAll = () => {
+    emojis.forEach(emoji => {
+        emoji.classList.remove('active')
+    })
+  }
+}
+selectEmoji()
+activeItemNotifyModal('#notifyModal .item')
+activeItemNotifyModal('#notifyMobile .item')
 filterContent()
 filterTable()
