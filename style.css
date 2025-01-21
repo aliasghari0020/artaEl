@@ -20415,6 +20415,127 @@ h6, .h6 {
   background: url("/assets/image/svg/checked.svg");
 }
 
+.first-section .first-section__image {
+  width: 100%;
+}
+.first-section .first-section__image img {
+  aspect-ratio: 4/3;
+  width: 100%;
+}
+.first-section .first-section__item img {
+  width: 24px;
+  height: 24px;
+}
+
+.second-section .second-section__image img {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+.second-section .line__second-section {
+  position: relative;
+  height: 20px;
+  min-width: 959px;
+}
+.second-section .line__second-section .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  background-color: #C1C7D0;
+}
+.second-section .line__second-section .dot.start {
+  right: 0;
+  background-color: #EF3F40;
+}
+.second-section .line__second-section .dot.end {
+  left: 0;
+}
+.second-section .line__second-section .dot.end.action {
+  animation: fillCircle 0s 3s forwards;
+}
+.second-section .line__second-section .line-counter {
+  width: 100%;
+  margin: 0 16px;
+  height: 10px;
+  position: relative;
+  background-color: #C1C7D0;
+  z-index: 1;
+}
+.second-section .line__second-section .line-counter .active {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #EF3F40;
+}
+.second-section .line__second-section .line-counter .active.action {
+  animation: fillAnimation 3s linear forwards;
+}
+@keyframes fillAnimation {
+  0% {
+    width: 0;
+  }
+  99% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes fillCircle {
+  0% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.sharp-image img {
+  width: 88px;
+}
+
+.links img {
+  width: 24px;
+}
+
+@media screen and (min-width: 480px) {
+  .first-section .first-section__item img {
+    width: 48px;
+    height: 48px;
+  }
+  .sharp-image img {
+    width: 168px;
+  }
+  .links img {
+    width: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .first-section .first-section__image img {
+    width: 494px;
+  }
+  .second-section .second-section__image img {
+    width: 427px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .first-section .first-section__image img {
+    width: 587px;
+  }
+  .second-section .second-section__image img {
+    width: 508px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .first-section .first-section__image img {
+    width: 677px;
+  }
+  .second-section .second-section__image img {
+    width: 588px;
+  }
+}
 body {
   direction: rtl;
   overflow-x: hidden;
