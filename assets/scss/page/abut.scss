@@ -19,6 +19,26 @@
 
 }
 
+.tab-profile{
+  margin-bottom: 117px;
+.nav-link{
+  padding: 0 12px;
+  height: 48px;
+  color: black;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #EBECF0;
+  &.active{
+    border-radius: 8px;
+    border: 1px solid  #EF3F40;
+    background: #FFF2F0;
+    color: #EF3F40;
+  }
+
+}
+
+}
+
 .second-section {
   .second-section__image {
     img {
@@ -145,6 +165,9 @@
       }
 
     }
+  }
+  .tab-profile{
+    margin-bottom: 285px;
   }
 }
 
