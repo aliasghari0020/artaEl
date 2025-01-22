@@ -1,0 +1,19 @@
+.contact-info__text-box{
+  input{
+    height: 48px;
+    padding: 0 12px;
+    border-radius: 4px;
+    background: #FAFBFC;
+    outline: none;
+    border: none;
+    &::placeholder{
+      color: #C1C7D0;
+
+    }
+    &:focus{
+      background: #fff;
+      border: 1px solid #EF3F40;
+
+    }
+  }
+}

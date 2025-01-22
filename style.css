@@ -20557,6 +20557,22 @@ h6, .h6 {
     width: 588px;
   }
 }
+.contact-info__text-box input {
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 4px;
+  background: #FAFBFC;
+  outline: none;
+  border: none;
+}
+.contact-info__text-box input::placeholder {
+  color: #C1C7D0;
+}
+.contact-info__text-box input:focus {
+  background: #fff;
+  border: 1px solid #EF3F40;
+}
+
 body {
   direction: rtl;
   overflow-x: hidden;
