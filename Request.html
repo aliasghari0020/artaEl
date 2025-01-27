@@ -11,7 +11,7 @@
     <!-- costume style and  -->
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="request-page">
 <div class="mx-auto" style="max-width: 1920px">
     <!--header-->
     <header class="border-bottom border-1  z-3 ">
@@ -897,15 +897,15 @@
     <!--main content-->
     <section>
         <div class="container-lg mt-10 mb-6">
-            <h3 class="h3-b-lg text-center">درخواست پیش فاکتور</h3>
-            <p class="text-main neutral-pure-700 mb-0 mt-2 text-center">توضیحات مربوط به این بخش</p>
+            <h3 class="h3-b-lg text-title text-center">درخواست پیش فاکتور</h3>
+            <p class="text-main neutral-pure-700 mb-6 mt-2 text-center">توضیحات مربوط به این بخش</p>
             <form >
-                <div class="d-flex">
-                    <div style="width: calc(100% - 376px)">
-                        <div class="p-6 border-1 border rounded-4 contact-info mb-6">
-                            <p class="text-sub-title-b mb-0 text-center">اطلاعات تماس</p>
-                            <p class="mb-10 neutral-mix-100 text-main text-center">اطلاعات تماس خود را وارد کرده و اقلام مورد نظر خود را انتخاب کنید</p>
-                            <div class="d-flex w-100 mb-4  gap-10 contact-info__text-box">
+                <div class="d-flex align-items-start flex-column flex-lg-row gap-6">
+                    <div class="main-contact">
+                        <div class="p-0 p-lg-6  rounded-4 contact-info mb-6">
+                            <p class="text-sub-title-b-lg text-main-b mb-0 text-lg-center">اطلاعات تماس</p>
+                            <p class="mb-10 neutral-mix-100 text-main-lg text-small text-lg-center">اطلاعات تماس خود را وارد کرده و اقلام مورد نظر خود را انتخاب کنید</p>
+                            <div class="d-flex w-100 mb-4 flex-column flex-md-row gap-10 contact-info__text-box">
                                <div class="d-flex flex-column flex-grow-1">
                                    <label class="text-small mb-2" for="name">نام و خانوادگی / نام شرکت</label>
                                    <input type="text" class=" text-caption text-small-lg" name="" id="name" placeholder="نام و نام خانوادگی خود را بنویسید...">
@@ -922,29 +922,154 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="p-6 border-1 border rounded-4 contact-info">
-                            <p class="text-sub-title-b mb-0 text-center">اقلام پیش فاکتور</p>
-                            <p class="mb-10 neutral-mix-100 text-main text-center">اطلاعات تماس خود را وارد کرده و اقلام مورد نظر خود را انتخاب کنید</p>
-                            <div class="d-flex w-100 mb-4  gap-10 contact-info__text-box">
-                                <div class="d-flex flex-column flex-grow-1">
-                                    <label class="text-small mb-2" for="product">عنوان محصول</label>
-                                    <input type="text" class=" text-caption text-small-lg" name="" id="product" placeholder="عنوان محصول را بنویسید...">
+                        <div class="p-0 p-lg-6  rounded-4 contact-info">
+                            <p class="text-sub-title-b-lg text-main-b mb-0 text-center">اقلام پیش فاکتور</p>
+                            <p class="mb-10 neutral-mix-100 text-main-lg text-small text-center">اطلاعات تماس خود را وارد کرده و اقلام مورد نظر خود را انتخاب کنید</p>
+                            <div class="d-flex justify-content-center">
+                                <ul class="nav nav-pills justify-content-center bg-neutral-light-20 rounded-2 p-1  mt-6" id="pills-tab" role="tablist">
+                                    <li class="nav-item " role="presentation">
+                                        <button class="nav-link  text-footnote active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">آپلود فایل</button>
+                                    </li>
+                                    <li class="nav-item " role="presentation">
+                                        <button class="nav-link text-footnote " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">نوشتن دستی اقلام</button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                    <div class="my-2">
+                                        <p class="mb-0 text-small">آپلود فایل</p>
+                                        <div class="py-8 rounded-4" style="border: 1px dashed #EBECF0">
+                                            <label for="file-sell" class="d-flex flex-column gap-2 align-items-center cursor-pointer">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                    <path d="M36.8292 0H7.34913C6.31666 0 5.47656 0.84 5.47656 1.87256V37.4536C5.47656 38.4862 6.31656 39.3262 7.34913 39.3262H9.244C9.30827 39.3262 9.37185 39.3129 9.4308 39.2873C9.48975 39.2617 9.5428 39.2243 9.58666 39.1773L38.6023 8.10084C38.6833 8.01402 38.7284 7.89971 38.7284 7.78097V1.89919C38.7285 0.852 37.8765 0 36.8292 0Z" fill="#E34449"/>
+                                                    <path d="M42.5254 11.5772V40.7344C42.5254 41.7675 41.6854 42.6075 40.6532 42.6075H10.6485C9.61539 42.6075 8.77539 41.7675 8.77539 40.7344V5.38781C8.77539 4.35563 9.61539 3.51562 10.6485 3.51562H34.4629L35.3291 4.38188L42.5254 11.5772Z" fill="#F4F5F7"/>
+                                                    <path d="M42.5254 11.5772V40.7344C42.5254 41.7675 41.6854 42.6075 40.6532 42.6075H10.6485C9.61539 42.6075 8.77539 41.7675 8.77539 40.7344V40.2638H38.7098C39.7551 40.2638 40.6026 39.4163 40.6026 38.37V11.5772L35.3291 4.3819L42.5254 11.5772Z" fill="#DFE1E6"/>
+                                                    <path d="M42.5254 11.5772H40.6026L35.0798 11.5763C34.7395 11.5763 34.4629 11.3006 34.4629 10.9594V3.51562C34.5876 3.51562 34.7066 3.56437 34.7948 3.6525L42.3885 11.2463C42.4766 11.3344 42.5254 11.4534 42.5254 11.5772Z" fill="#EBECF0"/>
+                                                    <path d="M42.5255 11.5772H40.6027L34.7949 3.65253L42.3887 11.2463C42.4768 11.3344 42.5255 11.4535 42.5255 11.5772Z" fill="#C1C7D0"/>
+                                                    <path d="M17.2578 17.8552H34.0786C34.4669 17.8552 34.7817 17.5405 34.7817 17.1521C34.7817 16.7637 34.4669 16.449 34.0786 16.449H17.2578C16.8695 16.449 16.5547 16.7637 16.5547 17.1521C16.5547 17.5405 16.8695 17.8552 17.2578 17.8552ZM34.0786 20.5957H17.2578C16.8695 20.5957 16.5547 20.9104 16.5547 21.2989C16.5547 21.6873 16.8695 22.002 17.2578 22.002H34.0786C34.4669 22.002 34.7817 21.6873 34.7817 21.2989C34.7817 20.9104 34.4669 20.5957 34.0786 20.5957ZM34.0786 24.8252H30.7555C30.3672 24.8252 30.0523 25.1399 30.0523 25.5283C30.0523 25.9167 30.3672 26.2314 30.7555 26.2314H34.0786C34.4669 26.2314 34.7817 25.9167 34.7817 25.5283C34.7817 25.1399 34.4669 24.8252 34.0786 24.8252ZM27.4464 24.8252H17.2578C16.8695 24.8252 16.5547 25.1399 16.5547 25.5283C16.5547 25.9167 16.8695 26.2314 17.2578 26.2314H27.4464C27.8347 26.2314 28.1495 25.9167 28.1495 25.5283C28.1495 25.1399 27.8347 24.8252 27.4464 24.8252Z" fill="#EBECF0"/>
+                                                    <path d="M34.4984 39.1697C34.4984 44.0381 30.5366 48 25.6672 48C25.2866 48 24.9116 47.9756 24.5441 47.9288H24.5403C20.2006 47.3728 16.8359 43.6566 16.8359 39.1697C16.8359 34.6819 20.2006 30.9656 24.5403 30.4097H24.5441C24.9116 30.3628 25.2866 30.3384 25.6672 30.3384C30.5366 30.3384 34.4984 34.3003 34.4984 39.1697Z" fill="#E34449"/>
+                                                    <path d="M34.4993 39.1697C34.4993 44.0381 30.5374 48 25.668 48C25.2874 48 24.9124 47.9756 24.5449 47.9288C28.8846 47.3728 32.2493 43.6566 32.2493 39.1697C32.2493 34.6819 28.8846 30.9656 24.5449 30.4097C24.9124 30.3628 25.2874 30.3384 25.668 30.3384C30.5374 30.3384 34.4993 34.3003 34.4993 39.1697Z" fill="#BD2F39"/>
+                                                    <path d="M29.2403 38.4936C29.1084 38.6254 28.9296 38.6995 28.7432 38.6995C28.5567 38.6995 28.3778 38.6255 28.246 38.4937L26.3715 36.6193V43.4167C26.3715 43.8052 26.0567 44.1199 25.6684 44.1199C25.2801 44.1199 24.9653 43.8052 24.9653 43.4167V36.6193L23.0908 38.4937C22.959 38.6255 22.7801 38.6995 22.5937 38.6995C22.4072 38.6995 22.2284 38.6254 22.0965 38.4936C21.9647 38.3617 21.8906 38.1829 21.8906 37.9964C21.8906 37.8099 21.9647 37.6311 22.0965 37.4993L25.1713 34.4246C25.3085 34.2874 25.4885 34.2188 25.6684 34.2188C25.8483 34.2188 26.0283 34.2874 26.1656 34.4246L29.2403 37.4993C29.3721 37.6311 29.4462 37.8099 29.4462 37.9964C29.4462 38.1829 29.3721 38.3617 29.2403 38.4936Z" fill="white"/>
+                                                </svg>
+                                                <span class="neutral-light-50 text-caption ">باکلیک در این قسمت فایل مورد نظر خود را آپلود کنید</span>
+                                            </label>
+                                            <input id="file-sell" class="d-none" type="file">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-column flex-grow-1">
-                                    <label class="text-small mb-2" for="count">تعداد</label>
-                                    <input type="text" class=" text-caption text-small-lg"  name="" id="count" placeholder="تعداد مورد نظر خود را بنویسید...">
+                                <div class="tab-pane mt-6 fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                    <div class="d-flex w-100 mb-4 flex-column flex-xxl-row  gap-10 contact-info__text-box">
+                                        <div class="d-flex flex-column  flex-grow-1">
+                                            <label class="text-small mb-2" for="product">عنوان محصول</label>
+                                            <input type="text" class=" text-caption text-small-lg" name="" id="product" placeholder="عنوان محصول را بنویسید...">
+                                        </div>
+                                        <div class="flex-grow-1 gap-4 flex-column align-items-xxl-end flex-xxl-row d-flex  ">
+                                            <div class="d-flex flex-column flex-grow-1 w-100">
+                                                <label class="text-small mb-2" for="count">تعداد</label>
+                                                <input type="text" class=" text-caption text-small-lg"  name="" id="count" placeholder="تعداد مورد نظر خود را بنویسید...">
+                                            </div>
+                                            <div  class="w-100">
+                                                <button class="px-4 w-100  add-item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <path d="M6 12H18" stroke="#EF3F40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 18V6" stroke="#EF3F40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                   <span class="text-small primary-base">افزودن محصول</span>
+                                                </button>
+                                            </div>
+                                        </div >
+                                    </div>
+                                    <div>
+                                        <div class="w-100">
+                                            <div class="py-3 px-4 bg-neutral-light-10 gap-10 d-flex rounded-3 ">
+                                                <p class="text-footnote mb-0 neutral-mix-100">ردیف</p>
+                                                <p class="text-footnote mb-0 neutral-mix-100">اقلام</p>
+                                            </div>
+                                            <ul class="p-0">
+                                                <li class="d-flex gap-4 gap-lg-10 pe-4 align-items-center  item">
+                                                    <p class="mb-0 text-caption neutral-mix-500">1</p>
+                                                    <p class="mb-0 text-caption neutral-mix-500 flex-grow-1">لامپ حبابی 18 وات LED افراتاب پایه E27 مدل AF-A80-18W</p>
+                                                    <div style="border-radius: 20px" class="d-flex gap-3 border-1 align-items-center  border px-3">
+                                                        <div class="cursor-pointer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M3 6H9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M6 9V3" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="text-caption ">1</div>
+                                                        <div class="cursor-pointer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M10.5 2.99C8.835 2.825 7.16 2.74 5.49 2.74C4.5 2.74 3.51 2.79 2.52 2.89L1.5 2.99M4.25 2.485L4.36 1.83C4.44 1.355 4.5 1 5.345 1H6.655C7.5 1 7.565 1.375 7.64 1.835L7.75 2.485M9.425 4.57L9.1 9.605C9.045 10.39 9 11 7.605 11H4.395C3 11 2.955 10.39 2.9 9.605L2.575 4.57M5.165 8.25H6.83M4.75 6.25H7.25" stroke="#FF4D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="d-flex gap-4 gap-lg-10 pe-4 align-items-center item">
+                                                    <p class="mb-0 text-caption neutral-mix-500">1</p>
+                                                    <p class="mb-0 text-caption neutral-mix-500 flex-grow-1">لامپ حبابی 18 وات LED افراتاب پایه E27 مدل AF-A80-18W</p>
+                                                    <div style="border-radius: 20px" class="d-flex gap-3 border-1 align-items-center  border px-3">
+                                                        <div class="cursor-pointer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M3 6H9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M6 9V3" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="text-caption ">1</div>
+                                                        <div class="cursor-pointer">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                                <path d="M3 6H9" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-6 px-6 side-bar h-auto   ">
+                        <div class="" >
+                           <div class="d-flex align-items-center my-2" style="height: 48px">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                   <path d="M3.16992 7.44L11.9999 12.55L20.7699 7.46997" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path d="M12 21.61V12.54" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path d="M9.9306 2.48L4.59061 5.45003C3.38061 6.12003 2.39062 7.80001 2.39062 9.18001V14.83C2.39062 16.21 3.38061 17.89 4.59061 18.56L9.9306 21.53C11.0706 22.16 12.9406 22.16 14.0806 21.53L19.4206 18.56C20.6306 17.89 21.6206 16.21 21.6206 14.83V9.18001C21.6206 7.80001 20.6306 6.12003 19.4206 5.45003L14.0806 2.48C12.9306 1.84 11.0706 1.84 9.9306 2.48Z" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path d="M16.9998 13.24V9.58002L7.50977 4.09998" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                               </svg>
+                                <p class="mb-0 text-small flex-grow-1"> تعداد اقلام</p>
+                               <p class="mb-0 text-small">12عدد</p>
+                           </div>
+                            <div class="mb-6">
+                                <div class="custom-select w-100">
+                                    <p class="mb-2 text-small me-2">نوع اطلاع رسانی</p>
+                                    <div class="select-selected justify-content-between d-flex">
+                                        <p class="text-caption mb-0"> انتخاب کنید...</p>
+                                        <div class="icon-select">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M13.2797 5.9668L8.93306 10.3135C8.41973 10.8268 7.57973 10.8268 7.06639 10.3135L2.71973 5.9668" stroke="#253858" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </div>
+
+                                    </div>
+                                    <div class="select-items select-hide">
+                                        <div class="option text-caption">عنوان گارانتی</div>
+                                        <div class="option text-caption">عنوان گارانتی</div>
+                                        <div class="option text-caption">عنوان گارانتی</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <button class="text-small w-100 text-white send-btn">ثبت درخواست پیش فاکتور</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
-
         </div>
-
     </section>
-
-
     <footer class="mt-lg-40">
         <div  class="container px-4 px-lg-0">
             <div class="d-flex  flex-column flex-xl-row  gap-8">
@@ -1793,5 +1918,33 @@
 <script src="./assets/js/header/megaMenu.js"></script>
 <script src="./assets/js/header/search.js"></script>
 <script src="./assets/js/pages/abut,js.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const selectSelected = document.querySelector('.select-selected');
+    const selectItems = document.querySelector('.select-items');
+    const options = document.querySelectorAll('.option');
+    const text = selectSelected.querySelector('p');
+    const icon = selectSelected.querySelector('.icon-select')
+    selectSelected.addEventListener('click', function () {
+      selectItems.classList.toggle('select-hide');
+      icon.classList.toggle('rote')
+    });
+
+    options.forEach(function (option) {
+      option.addEventListener('click', function () {
+        text.textContent = option.textContent;
+        selectItems.classList.add('select-hide');
+        icon.classList.remove('rote')
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.custom-select')) {
+        selectItems.classList.add('select-hide');
+        icon.classList.remove('rote')
+      }
+    });
+  });
+</script>
 </body>
 </html>

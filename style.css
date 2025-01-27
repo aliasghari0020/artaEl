@@ -20557,6 +20557,15 @@ h6, .h6 {
     width: 588px;
   }
 }
+.contact-info {
+  border: none;
+}
+@media screen and (min-width: 1024px) {
+  .contact-info {
+    border: 1px solid #EBECF0;
+  }
+}
+
 .contact-info__text-box input {
   height: 48px;
   padding: 0 12px;
@@ -20571,6 +20580,88 @@ h6, .h6 {
 .contact-info__text-box input:focus {
   background: #fff;
   border: 1px solid #EF3F40;
+}
+
+.request-page .main-contact {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .request-page .main-contact {
+    width: calc(100% - 314px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .request-page .main-contact {
+    width: calc(100% - 369px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .request-page .main-contact {
+    width: calc(100% - 424px);
+  }
+}
+.request-page .side-bar {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #EBECF0;
+}
+@media screen and (min-width: 1024px) {
+  .request-page .side-bar {
+    width: 290px;
+    border: 1px solid #EBECF0;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .request-page .side-bar {
+    width: 345px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .request-page .side-bar {
+    width: 400px;
+  }
+}
+.request-page .contact-info .item {
+  height: 56px;
+  border-bottom: 1px dashed #EBECF0;
+}
+.request-page .contact-info .item:last-child {
+  border-bottom: 0;
+}
+.request-page button.add-item {
+  display: flex;
+  height: 46px;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #EF3F40;
+}
+.request-page .nav-item button {
+  padding: 0 24px;
+  background: #F4F5F7;
+  border-radius: 2px;
+  color: #C1C7D0;
+  height: 32px;
+}
+.request-page .nav-item button.active {
+  background: white;
+  color: #000;
+}
+.request-page .send-btn {
+  display: flex;
+  height: 48px;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid #EF3F40;
+  background: #EF3F40;
 }
 
 body {
