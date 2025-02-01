@@ -20664,6 +20664,35 @@ h6, .h6 {
   background: #EF3F40;
 }
 
+.content-faq {
+  max-width: 1778px;
+  width: 100%;
+}
+.content-faq .faq-container {
+  max-width: 900px;
+  width: 100%;
+}
+.content-faq .faq-container li {
+  list-style-type: initial;
+}
+.content-faq .faq-container button {
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #DFE1E6;
+  background: #FFF;
+  width: 114px;
+}
+.content-faq .play-video {
+  width: 50px;
+  height: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .content-faq .play-video {
+    width: 114px;
+    height: 114px;
+  }
+}
+
 body {
   direction: rtl;
   overflow-x: hidden;

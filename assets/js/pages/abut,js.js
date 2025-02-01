@@ -11,9 +11,22 @@ const addAnimation = () => {
     }
   });
 }
+const playVideo = ()=>{
+  const videoBox = document.querySelector('.video-box');
+  const playIcon = videoBox.querySelector('.play-video');
+  const video = videoBox.querySelector('video');
+  playIcon.addEventListener('click', ()=>{
+    playIcon.classList.add('d-none')
+    video.play()
+    video.controls = true
+  })
+}
 
 
 
+if(document.querySelector('.video-box')){
+  playVideo()
+}
 if(document.getElementById('line_animation')){
   addAnimation()
 }

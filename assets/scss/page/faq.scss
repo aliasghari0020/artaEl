@@ -1,0 +1,27 @@
+.content-faq{
+  max-width: 1778px;
+  width: 100%;
+  .faq-container{
+    max-width: 900px;
+    width: 100%;
+    li{
+      list-style-type: initial;
+    }
+    button{
+      height: 40px;
+      border-radius: 4px;
+      border: 1px solid #DFE1E6;
+      background: #FFF;
+      width: 114px;
+    }
+  }
+  .play-video{
+    width: 50px;
+    height: 50px;
+    @media screen and (min-width: 1024px) {
+      width: 114px;
+      height: 114px;
+    }
+  }
+
+}
