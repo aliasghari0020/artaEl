@@ -23,5 +23,37 @@
       height: 114px;
     }
   }
+  .search-faq{
+    width: 100%;
+    max-width: 608px;
+    height: 48px;
+    border-radius: 10px;
+    background:#FAFBFC;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    input{
+      border: 0;
+      outline: none;
+      background:#FAFBFC;
+      &::placeholder{
+        color: #C1C7D0;
+      }
+    }
+  }
+
+  .accordion{
+    button{
+      background: none;
+      border: none;
+      &:after{
+        margin-left: initial;
+        margin-right: auto;
+      }
+      &:active:focus{
+        border: none;
+      }
+    }
+  }
 
 }

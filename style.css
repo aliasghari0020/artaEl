@@ -20692,6 +20692,35 @@ h6, .h6 {
     height: 114px;
   }
 }
+.content-faq .search-faq {
+  width: 100%;
+  max-width: 608px;
+  height: 48px;
+  border-radius: 10px;
+  background: #FAFBFC;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.content-faq .search-faq input {
+  border: 0;
+  outline: none;
+  background: #FAFBFC;
+}
+.content-faq .search-faq input::placeholder {
+  color: #C1C7D0;
+}
+.content-faq .accordion button {
+  background: none;
+  border: none;
+}
+.content-faq .accordion button:after {
+  margin-left: initial;
+  margin-right: auto;
+}
+.content-faq .accordion button:active:focus {
+  border: none;
+}
 
 body {
   direction: rtl;
