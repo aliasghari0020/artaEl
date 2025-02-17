@@ -20722,6 +20722,119 @@ h6, .h6 {
   border: none;
 }
 
+.blog-header {
+  height: 68px;
+}
+
+.first-view__blog-page .right-side__blog-page {
+  width: 100%;
+}
+.first-view__blog-page .left-side__blog-page {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.first-view__blog-page .left-side__blog-page img {
+  border-radius: 10px 10px 0 0;
+}
+@media screen and (min-width: 1024px) {
+  .first-view__blog-page .right-side__blog-page {
+    width: 34%;
+  }
+  .first-view__blog-page .left-side__blog-page {
+    width: 66%;
+  }
+  .first-view__blog-page .left-side__blog-page img {
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.first-section-items {
+  margin-bottom: 40px;
+}
+.first-section-items .text-item {
+  height: 40px;
+  overflow-y: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .first-section-items {
+    margin-bottom: 135px;
+  }
+}
+
+.special-blog-slider-container {
+  width: 100%;
+}
+.special-blog-slider-container .next__special-blog-slider,
+.special-blog-slider-container .prev__special-blog-slider {
+  transform: translateY(-50%);
+  border: 2px solid #EBECF0;
+}
+@media screen and (min-width: 1024px) {
+  .special-blog-slider-container {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .special-blog-slider-container {
+    width: 670px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .special-blog-slider-container {
+    width: 870px;
+  }
+}
+
+.blog-card .text {
+  height: 56px;
+  overflow-y: hidden;
+}
+
+.box__product-post .main-cart__product-post .image__main-card, .box__product-post .main-cart__product-post .text__main-card {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .box__product-post {
+    border-radius: 8px;
+    border: 1px solid #EBECF0;
+  }
+  .box__product-post .image__main-card, .box__product-post .text__main-card {
+    width: 50%;
+  }
+}
+
+.image__email-box {
+  width: 100%;
+}
+
+.main-card-container__2 .main-card__2 {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main-card-container__2 .main-card__2 {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-card-container__2 {
+    border: 1px solid #EBECF0;
+  }
+}
+
+.side-bar__cat-blog {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .side-bar__cat-blog {
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+
+.search-blog {
+  height: 68px !important;
+}
+
 body {
   direction: rtl;
   overflow-x: hidden;
