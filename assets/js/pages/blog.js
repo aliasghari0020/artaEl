@@ -87,4 +87,8 @@ function initSwiper(containerSelector, nextButtonSelector, prevButtonSelector, s
   return swiper;
 }
 
-const swiper1 = initSwiper('#product-crousle', '.special-next', '.special-prev', 289);
+
+
+if(document.querySelector('#product-crousle')){
+  const swiper1 = initSwiper('#product-crousle', '.special-next', '.special-prev', 289);
+}

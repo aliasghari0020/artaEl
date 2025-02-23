@@ -130,7 +130,21 @@
       }
     }
   }
+  #product-crousle{
+    max-width: 100%;
+    @media screen and (min-width: 1024px) {
 
+      max-width: 650px;
+    }
+    @media screen and (min-width: 1200px) {
+
+      max-width: 720px;
+    }
+    @media screen and (min-width: 1600px) {
+
+      max-width: 900px;
+    }
+  }
 }
 
 .single-table{
@@ -208,4 +222,18 @@
     }
   }
 
+}
+
+.item_blog__footer{
+  min-width: 207px;
+  @media screen and (min-width: 1024px) {
+    min-width: 142px;
+  }
+}
+
+.form_container__blog-footer{
+  max-width: 100%;
+  @media screen and (min-width: 1024px) {
+    max-width: 550px;
+  }
 }

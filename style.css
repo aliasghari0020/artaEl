@@ -20868,6 +20868,24 @@ h6, .h6 {
 .single-blog-page .accordion button:active:focus {
   border: none;
 }
+.single-blog-page #product-crousle {
+  max-width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .single-blog-page #product-crousle {
+    max-width: 650px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .single-blog-page #product-crousle {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .single-blog-page #product-crousle {
+    max-width: 900px;
+  }
+}
 
 .single-table tbody tr {
   border-bottom: 1px solid #ebecf0;
@@ -20925,6 +20943,24 @@ h6, .h6 {
   width: 8px;
   height: 8px;
   font-size: 20px;
+}
+
+.item_blog__footer {
+  min-width: 207px;
+}
+@media screen and (min-width: 1024px) {
+  .item_blog__footer {
+    min-width: 142px;
+  }
+}
+
+.form_container__blog-footer {
+  max-width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .form_container__blog-footer {
+    max-width: 550px;
+  }
 }
 
 body {
