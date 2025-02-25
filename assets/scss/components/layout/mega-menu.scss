@@ -172,6 +172,14 @@
         }
       }
     }
+.best-menu{
+  .menu-column{
+    min-width: 23%;
+    div{
+      align-items: end;
+    }
+  }
+}
 
     .sub-menu-level-1 {
       width: calc(100% - 208px);

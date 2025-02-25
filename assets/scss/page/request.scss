@@ -6,8 +6,8 @@
 }
 .contact-info__text-box {
 
-  input {
-    height: 48px;
+  input , textarea{
+
     padding: 0 12px;
     border-radius: 4px;
     background: #FAFBFC;
@@ -23,6 +23,19 @@
       background: #fff;
       border: 1px solid #EF3F40;
 
+    }
+  }
+  input{
+    height: 48px;
+  }
+  &.single{
+    input , textarea{
+      border: 1px solid  #EBECF0;
+      &:focus {
+        background: #fff;
+        border: 1px solid #EF3F40;
+
+      }
     }
   }
 }
