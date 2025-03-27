@@ -1,9 +1,12 @@
-scrollCostume('.video-list');
+if(document.querySelector('.video-list')){
+  scrollCostume('.video-list');
+}
 const slider = createSwiperSlider('#product-slider', '#slider-prev', '#slider-next', '#slider-pagination', '#slider-scrollbar');
 
 // scroll x story  in shared
 function initSwiper(containerSelector, nextButtonSelector, prevButtonSelector, slideWidth) {
   function updateSlidesPerView() {
+
     const containerWidth = document.querySelector(containerSelector).clientWidth;
     const spaceBetween = 0; // فاصله بین اسلایدها
     const slidesPerView = (containerWidth + spaceBetween) / (slideWidth + spaceBetween);
@@ -53,8 +56,10 @@ function initSwiper(containerSelector, nextButtonSelector, prevButtonSelector, s
 }
 
 // مثال: ایجاد چند اسلایدر مختلف
-const swiper1 = initSwiper('#product-crousle', '.special-next', '.special-prev', 289);
-const swiper2 = initSwiper('#another-crousle', '.another-next', '.another-prev', 289);
+if(document.querySelector("#product-crousle")){
+  const swiper1 = initSwiper('#product-crousle', '.special-next', '.special-prev', 289);
+  const swiper2 = initSwiper('#another-crousle', '.another-next', '.another-prev', 289);
+}
 document.addEventListener('DOMContentLoaded', function () {
   const selectSelected = document.querySelector('.select-selected');
   const selectItems = document.querySelector('.select-items');
@@ -199,8 +204,10 @@ const selectEmoji = () => {
     })
   }
 }
-selectEmoji()
-activeItemNotifyModal('#notifyModal .item')
-activeItemNotifyModal('#notifyMobile .item')
-filterContent()
-filterTable()
+// if( document.querySelectorAll('.emoji')){
+//   selectEmoji()
+//   activeItemNotifyModal('#notifyModal .item')
+//   activeItemNotifyModal('#notifyMobile .item')
+//   filterContent()
+//   filterTable()
+// }
