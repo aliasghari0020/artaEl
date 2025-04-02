@@ -13,7 +13,6 @@ const swiper88 = new Swiper('.b2b-slider', {
 const swiper888 = new Swiper('.comment-box-electricity ', {
   spaceBetween: 20,
   loop: true,
-  direction: 'vertical',
 
   pagination: {
     el: '.dots-slider',

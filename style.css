@@ -21400,6 +21400,18 @@ h6, .h6 {
   border: none;
 }
 
+.rent .accordion button {
+  background: #fff;
+  border: none;
+}
+.rent .accordion button:after {
+  margin-left: initial;
+  margin-right: auto;
+}
+.rent .accordion button:active:focus {
+  border: none;
+}
+
 .careers .section-image {
   width: 100%;
   height: 450px;

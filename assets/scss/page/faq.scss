@@ -138,6 +138,25 @@
   }
 }
 
+.rent{
+  .accordion {
+    button {
+      background: #fff;
+      border: none;
+
+      &:after {
+        margin-left: initial;
+        margin-right: auto;
+      }
+
+      &:active:focus {
+        border: none;
+      }
+    }
+  }
+}
+
+
 .careers {
   .section-image {
     width: 100%;
