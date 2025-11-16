@@ -1,0 +1,80 @@
+.single .content h2{
+    font-size: 20.25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+}
+.single .content h3{
+    ont-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+}
+.single .content h4{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px;
+}
+.single .content h5{
+    font-size: 14.22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+}
+.single .content p{
+    font-size: 14.22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 28px;
+}
+.single .content a{
+    color: #1677FF;
+}
+.single .content li{
+    list-style-type: initial;
+}
+.single .content li::marker{
+    width: 8px;
+    height: 8px;
+    color: #C1C7D0;
+}
+@media screen and (min-width: 1024px) {
+    .single .content h2{
+        font-size: 28.83px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 56px;
+    }
+    .single .content h3{
+        font-size: 25.63px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 40px;
+    }
+    .single .content h4{
+        font-size: 22.78px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 40px;
+    }
+    .single .content h5{
+        font-size: 20.25px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 48px;
+    }
+    .single .content p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+    }
+}
+/* Container for the table */
+.table-responsive-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* برای اسکرول نرم در موبایل */
+}
+

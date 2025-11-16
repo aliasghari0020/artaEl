@@ -1,0 +1,1350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="./assets/swiper/swiper.min.css"
+    />
+    <!-- costume style and  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+
+
+<header class="border-bottom border-1  mx-auto" style="max-width: 1920px">
+    <!-- desktop -->
+    <div class="d-none d-lg-flex px-6 py-7">
+        <!-- logo -->
+        <div class="logo">
+            <div class="logo__container">
+                <a href="#" class="logo__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="118" height="46" viewBox="0 0 118 46" fill="none"
+                         class="logo__icon">
+                        <path
+                                d="M88.3097 0.658449C81.2199 1.77108 77.1058 3.50471 72.3447 7.38597C71.5685 8.03285 70.8699 8.47272 70.7664 8.36922C70.6887 8.2916 70.5594 7.48947 70.5076 6.60972C70.43 5.44534 70.5335 4.64321 70.9216 3.65996L71.4391 2.31445L70.4817 2.70258C64.2458 5.31596 58.8897 10.284 56.4316 15.8212L55.9658 16.8304L57.2078 15.7954C57.8806 15.2261 59.0967 14.3464 59.8988 13.8289C61.4255 12.8715 64.9186 11.3449 65.6172 11.3449C65.9018 11.3449 66.1089 12.0694 66.4452 14.2429C67.118 18.7969 66.9627 18.5899 68.3859 16.5975C70.3782 13.7512 73.2245 10.6721 75.4756 8.86085C78.1408 6.71322 82.9018 4.33271 86.369 3.40121C88.8013 2.75433 89.2929 2.70258 94.3903 2.70258C99.0737 2.72846 100.083 2.80608 101.816 3.27183C107.043 4.69496 110.976 7.10134 115.504 11.6036C118.48 14.5534 118.48 14.1394 115.478 10.698C113.046 7.85172 108.415 4.30684 105.465 3.03896C101.144 1.15008 97.6764 0.477324 92.5791 0.503199C90.5867 0.529074 88.6719 0.606699 88.3097 0.658449Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M106.784 15.5884C105.103 16.3129 104.3 18.4346 104.378 21.876L104.43 23.8167L106.655 21.5914L108.88 19.3661H112.684H116.488L116.772 17.8654C116.927 17.0633 117.134 16.1318 117.212 15.7954L117.341 15.2261H112.477C108.958 15.252 107.354 15.3555 106.784 15.5884Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M30.6082 28.9399V36.4437H24.7863H18.9644V34.1149V31.7862H22.2764H25.5626L26.6752 29.7161L27.7878 27.6461H20.0512C13.6859 27.6461 12.2628 27.6979 12.1593 28.0084C11.9523 28.5259 12.4956 28.9399 13.4272 28.9399C14.6174 28.9399 15.2902 29.7679 14.7209 30.5441C14.7209 30.57 12.418 30.6476 9.64939 30.7253C5.40588 30.8546 4.60375 30.9323 4.60375 31.2687C4.60375 31.5792 5.173 31.6827 7.55351 31.7862C9.93402 31.8897 10.555 31.9932 10.762 32.3554C10.969 32.6659 10.9431 32.8988 10.7103 33.1834C10.4515 33.4939 9.85639 33.5974 8.17451 33.5974C6.05275 33.5974 6.001 33.6233 6.07863 34.1667C6.15625 34.7359 6.25975 34.7618 9.18364 34.8394C11.6418 34.8912 12.211 34.9688 12.3404 35.331C12.7285 36.3402 12.1334 36.4437 6.57026 36.4437C1.18824 36.4437 0.463737 36.573 0.774238 37.3752C0.877738 37.6598 1.65399 37.7374 4.31912 37.7374C6.18213 37.7374 7.86401 37.8409 8.04513 37.9703C8.25214 38.0997 8.35564 38.4102 8.30389 38.6689C8.22626 39.057 7.86401 39.2123 6.415 39.4193C5.09538 39.6004 4.60375 39.7816 4.60375 40.0662C4.60375 40.4026 6.82901 40.4543 22.7939 40.5319C42.8471 40.5837 41.8639 40.6613 43.08 38.9794C43.6492 38.1514 43.6751 37.8927 43.7527 32.8729L43.8304 27.6461H41.631H39.4057V32.0449V36.4437H37.2063H35.007V28.9399V21.4361H32.8076H30.6082V28.9399Z"
+                                fill="#EF3F40"/>
+                        <path d="M48.7207 23.1182V24.8H53.5076H58.2945V23.1182V21.4363H53.5076H48.7207V23.1182Z"
+                              fill="#EF3F40"/>
+                        <path
+                                d="M65.1514 28.9917V36.5731L62.9003 36.6508L60.6233 36.7284V32.1744V27.6462H58.5015H56.3539V32.0968V36.5731L54.1028 36.6508L51.8258 36.7284V32.3038V27.905H49.7558H47.6858V32.2261V36.5473L45.5381 38.6949L43.3905 40.8425H45.7969C47.2718 40.8425 48.5396 40.7132 49.0571 40.4803C50.1698 40.0145 51.3083 38.8243 51.4894 37.9445C51.7482 36.599 52.0845 37.1941 52.0845 39.0313V40.8425H63.4178H74.7511L76.0449 40.1957C78.2442 39.1089 78.2184 39.2383 78.2184 29.7421V21.4362H76.1484H74.0783V28.94V36.4438H71.7496H69.4208V28.94V21.4362H67.2991H65.1514V28.9917Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M80.5471 31.1394V40.8425H81.5304C82.85 40.8425 83.7039 40.3509 84.2214 39.29C84.6354 38.4879 84.6871 37.4529 84.6871 29.8974V21.4362H82.6171H80.5471V31.1394Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M87.5333 29.3798C87.5333 38.3326 87.5592 38.4102 89.4222 39.911C90.4055 40.6872 90.4831 40.7131 93.6916 40.7907C96.6931 40.8683 97.0812 40.8166 98.1421 40.2732C98.789 39.9368 99.5652 39.29 99.8757 38.7983C100.445 37.9703 100.471 37.6857 100.471 32.7953V27.6462H98.4009H96.3309V32.0449V36.4437H94.0021H91.6733V28.9399V21.4362H89.6033H87.5333V29.3798Z"
+                                fill="#EF3F40"/>
+                        <path d="M92.9672 23.2473V25.0586H96.719H100.471V23.2473V21.4361H96.719H92.9672V23.2473Z"
+                              fill="#EF3F40"/>
+                        <path
+                                d="M110.562 31.1394V40.8425H111.468C112.71 40.8425 113.641 40.3509 114.133 39.4453C114.521 38.7466 114.573 37.5046 114.65 30.0267L114.728 21.4362H112.658H110.562V31.1394Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M104.352 32.2261V36.5731L102.23 38.7208L100.083 40.8684L102.955 40.7908C105.646 40.7132 105.879 40.6614 106.784 39.9628C108.492 38.669 108.751 37.7634 108.751 32.4849V27.905H106.552H104.352V32.2261Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M32.4712 43.7405L32.5488 45.3706L37.2839 45.4482L41.9932 45.5V43.8181V42.1362H37.2063H32.3936L32.4712 43.7405Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M56.7421 43.4041C56.7421 43.9733 56.8714 44.5167 57.0008 44.5943C57.1561 44.6978 57.2596 44.2838 57.2596 43.5852C57.2596 42.9383 57.1561 42.395 57.0008 42.395C56.8714 42.395 56.7421 42.8607 56.7421 43.4041Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M68.6445 43.5852C68.6445 44.2838 68.748 44.6978 68.9033 44.5943C69.2138 44.4132 69.162 42.395 68.8515 42.395C68.748 42.395 68.6445 42.9383 68.6445 43.5852Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M75.1133 43.5852C75.1133 44.2838 75.2168 44.6978 75.372 44.5943C75.6825 44.4132 75.6308 42.395 75.3203 42.395C75.2168 42.395 75.1133 42.9383 75.1133 43.5852Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M48.876 42.8608C48.6948 43.1713 49.083 44.5427 49.3935 44.6462C49.5487 44.698 49.6522 44.3357 49.6522 43.7923C49.6005 42.8608 49.1865 42.3692 48.876 42.8608Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M64.2975 42.8608C63.8835 43.1454 64.2975 44.5685 64.8409 44.672C65.0738 44.7238 65.2808 44.6461 65.2808 44.4909C65.2808 44.3356 65.1773 44.2063 65.022 44.2063C64.6598 44.2063 64.6857 43.5076 65.0479 43.3783C65.229 43.3265 65.2032 43.1713 64.9703 42.9901C64.7892 42.809 64.4787 42.7573 64.2975 42.8608Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M44.0632 43.1712C43.7527 43.3782 43.8045 43.4299 44.322 43.4299L44.9688 43.4558L44.3737 43.7146C43.5716 44.0251 43.7786 44.5943 44.6583 44.5943C45.2535 44.6202 45.357 44.5167 45.357 43.9216C45.357 43.5334 45.1759 43.1712 44.943 43.0677C44.4513 42.8866 44.529 42.8607 44.0632 43.1712Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M46.7801 43.1195C46.5472 43.3523 46.6507 44.4391 46.9095 44.5943C47.0647 44.672 47.1682 44.5167 47.1682 44.2321C47.1682 43.9475 47.2976 43.637 47.427 43.5593C47.5822 43.4817 47.6857 43.3006 47.6857 43.1971C47.6857 42.9901 46.9871 42.9125 46.7801 43.1195Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M51.3082 43.1712C50.9977 43.3782 51.0495 43.4299 51.567 43.4299L52.2138 43.4558L51.6187 43.7146C50.8166 44.0251 51.0236 44.5943 51.9033 44.5943C52.4985 44.6202 52.602 44.5167 52.602 43.9216C52.602 43.5334 52.4208 43.1712 52.188 43.0677C51.6963 42.8866 51.774 42.8607 51.3082 43.1712Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M54.2322 43.0936C53.7923 43.2489 53.8182 44.0769 54.258 44.4391C54.7756 44.8531 55.4483 44.5168 55.4483 43.8181C55.4483 43.3524 54.8791 42.7831 54.5944 42.9384C54.5685 42.9384 54.3874 43.016 54.2322 43.0936ZM55.1119 44.1028C55.0343 44.1804 54.8014 44.2063 54.6203 44.1286C54.4133 44.051 54.4909 43.9734 54.7756 43.9734C55.0602 43.9475 55.2154 44.0251 55.1119 44.1028Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M58.7862 43.3264C58.398 43.7922 58.7344 44.5426 59.433 44.6719C60.054 44.8013 60.4422 43.6628 59.8988 43.2229C59.3554 42.8089 59.2002 42.8348 58.7862 43.3264ZM59.7694 44.1027C59.6918 44.1803 59.4589 44.2062 59.2778 44.1286C59.0708 44.0509 59.1484 43.9733 59.433 43.9733C59.7177 43.9474 59.8729 44.0251 59.7694 44.1027Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M61.6583 43.3006C61.3995 43.6111 61.3736 43.844 61.5806 44.1545C61.8911 44.672 62.745 44.7237 62.9003 44.2321C62.9779 43.9992 62.8744 43.9475 62.4604 44.0768C62.0464 44.2062 61.917 44.1286 61.917 43.8181C61.917 43.4817 62.0723 43.4041 62.4604 43.5076C62.7968 43.5852 62.952 43.5335 62.8744 43.3523C62.7191 42.8607 62.0205 42.8607 61.6583 43.3006Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M66.3934 43.3266C66.2123 43.8182 66.3934 44.491 66.7039 44.4651C66.8591 44.4392 66.9367 44.284 66.885 44.077C66.8591 43.8958 66.9367 43.663 67.092 43.5595C67.4801 43.3266 67.4025 42.9902 66.9367 42.9902C66.7039 42.9902 66.471 43.1455 66.3934 43.3266Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M70.7922 43.0937C70.3264 43.2748 70.3782 44.3875 70.8439 44.5686C71.3097 44.7497 72.0083 44.491 72.0083 44.1546C72.0083 44.0252 71.7754 43.9993 71.4908 44.077C71.1285 44.2063 70.9733 44.1287 70.9733 43.8182C70.9733 43.5077 71.1285 43.4301 71.4908 43.5595C72.1118 43.7406 72.1894 43.3007 71.5943 43.0678C71.3614 42.9902 71.1803 42.9126 71.1544 42.9385C71.1285 42.9385 70.9474 43.0161 70.7922 43.0937Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M76.9246 43.8698C76.9246 44.3355 77.0539 44.7236 77.1833 44.7236C77.3386 44.7236 77.4421 44.4908 77.4421 44.232C77.4421 43.9474 77.5714 43.6369 77.7008 43.5593C78.1148 43.3005 77.9854 43.0159 77.4421 43.0159C77.0281 43.0159 76.9246 43.197 76.9246 43.8698Z"
+                                fill="#EF3F40"/>
+                        <path
+                                d="M73.1727 44.4651C73.2762 44.6203 73.4574 44.6721 73.5867 44.5945C73.949 44.3616 73.8714 44.2063 73.4056 44.2063C73.1986 44.2063 73.0951 44.3357 73.1727 44.4651Z"
+                                fill="#EF3F40"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="d-flex align-items-start justify-content-between w-100 me-6 position-relative">
+            <!-- search -->
+            <div class="search position-relative ">
+                <div class="default p-3 rounded-4 bg-neutral-light-20 ">
+                    <div class=" d-flex w-100">
+                        <label for="myInput"
+                               class="border-0 bg-neutral-light-20 w-100 text-caption mb-0 neutral-light-50">جستجو
+                            کنید...</label>
+                        <div class="me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                 fill="none">
+                                <path
+                                        d="M9.58334 17.5001C13.9556 17.5001 17.5 13.9557 17.5 9.58341C17.5 5.21116 13.9556 1.66675 9.58334 1.66675C5.21108 1.66675 1.66667 5.21116 1.66667 9.58341C1.66667 13.9557 5.21108 17.5001 9.58334 17.5001Z"
+                                        stroke="#6B778C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                <path d="M18.3333 18.3334L16.6667 16.6667" stroke="#6B778C" stroke-width="1.5"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!--  result  -->
+                <div class=" searched hidden  position-absolute pt-4 px-4 pb-6 ">
+                    <div class=" d-flex w-100 p-3 rounded-1 bg-neutral-light-20  mb-6">
+                        <div class="ms-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                 fill="none">
+                                <path
+                                        d="M9.58334 17.5001C13.9556 17.5001 17.5 13.9557 17.5 9.58341C17.5 5.21116 13.9556 1.66675 9.58334 1.66675C5.21108 1.66675 1.66667 5.21116 1.66667 9.58341C1.66667 13.9557 5.21108 17.5001 9.58334 17.5001Z"
+                                        stroke="#6B778C" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                <path d="M18.3333 18.3334L16.6667 16.6667" stroke="#6B778C" stroke-width="1.5"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <form class=" flex-fill">
+                            <input type="text" id="myInput" autofocus placeholder="عبارت مورد نظرتان را جستجو کنید..."
+                                   class="border-0 bg-neutral-light-20 w-100 text-caption mb-0 neutral-mix-black">
+                        </form>
+                    </div>
+                    <!-- first view -->
+                    <div>
+                        <!-- row 1 Optional -->
+                        <div class="mb-6">
+                            <div class="d-flex align-items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                     fill="none">
+                                    <path d="M18.3333 10.0001C18.3333 14.6001 14.6 18.3334 9.99999 18.3334C5.39999 18.3334 1.66666 14.6001 1.66666 10.0001C1.66666 5.40008 5.39999 1.66675 9.99999 1.66675C14.6 1.66675 18.3333 5.40008 18.3333 10.0001Z"
+                                          stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M13.0917 12.65L10.5083 11.1083C10.0583 10.8416 9.69167 10.2 9.69167 9.67497V6.2583"
+                                          stroke="black" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <p class="me-2 mb-0 text-small neutral-mix-black flex-fill">جستجوهای اخیر شما</p>
+                                <!-- delete-->
+                                <div class="cursor-pointer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none">
+                                        <path d="M21 5.98C17.67 5.65 14.32 5.48 10.98 5.48C9 5.48 7.02 5.58 5.04 5.78L3 5.98M8.5 4.97L8.72 3.66C8.88 2.71 9 2 10.69 2H13.31C15 2 15.13 2.75 15.28 3.67L15.5 4.97M18.85 9.14L18.2 19.21C18.09 20.78 18 22 15.21 22H8.79C6 22 5.91 20.78 5.8 19.21L5.15 9.14M10.33 16.5H13.66M9.5 12.5H14.5"
+                                              stroke="#7A869A" stroke-width="1.5" stroke-linecap="round"
+                                              stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <ul class="p-0 d-flex gap-2">
+                                    <li>
+                                        <a href="#"
+                                           class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                            <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                 viewBox="0 0 12 12" fill="none">
+                                                <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                                      stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                            <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                 viewBox="0 0 12 12" fill="none">
+                                                <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                                      stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                            <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                 viewBox="0 0 12 12" fill="none">
+                                                <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                                      stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                            <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                 viewBox="0 0 12 12" fill="none">
+                                                <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                                      stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- row 2  -->
+                        <div>
+                            <div class="d-flex align-items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                     fill="none">
+                                    <path d="M5.07492 11.0667H7.64992V17.0667C7.64992 18.4667 8.40826 18.7501 9.33326 17.7001L15.6416 10.5334C16.4166 9.65841 16.0916 8.93341 14.9166 8.93341H12.3416V2.93341C12.3416 1.53341 11.5833 1.25008 10.6583 2.30008L4.34992 9.46674C3.58326 10.3501 3.90826 11.0667 5.07492 11.0667Z"
+                                          stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                          stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="me-2 mb-0 text-small neutral-mix-black">بیشترین عبارات جستجو شده</p>
+                            </div>
+                            <div>
+                                <ul class="p-0 d-flex gap-2">
+                                    <li>
+                                        <a href="#"
+                                           class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                            <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                 viewBox="0 0 12 12" fill="none">
+                                                <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                                      stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                            <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                 viewBox="0 0 12 12" fill="none">
+                                                <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                                      stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                            <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                 viewBox="0 0 12 12" fill="none">
+                                                <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                                      stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                           class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                            <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                                 viewBox="0 0 12 12" fill="none">
+                                                <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                                      stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--writing -->
+                    <div>
+                        <!-- row 1 category links -->
+                        <div class="mb-6">
+                            <p class="text-small">دسته‌های مرتبط</p>
+                            <ul class="p-0 d-flex flex-column gap-3">
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                            <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.14 10.49 15.73 10.49H19.77C21.36 10.5 22 9.93 22 8.52Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="me-2 text-small neutral-pure-700">دسته‌بندی اول</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                            <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.14 10.49 15.73 10.49H19.77C21.36 10.5 22 9.93 22 8.52Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="me-2 text-small neutral-pure-700">دسته‌بندی اول</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                            <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.14 10.49 15.73 10.49H19.77C21.36 10.5 22 9.93 22 8.52Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="me-2 text-small neutral-pure-700">دسته‌بندی اول</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                             viewBox="0 0 24 24" fill="none">
+                                            <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.14 10.49 15.73 10.49H19.77C21.36 10.5 22 9.93 22 8.52Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
+                                                  stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="me-2 text-small neutral-pure-700">دسته‌بندی اول</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- row 2 result card -->
+                        <div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <p class="text-small neutral-mix-black mb-0">محصولات مرتبط</p>
+                                <a href="#">
+                                    <span class="ms-2 text-caption neutral-pure-700">همه نتایج</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                         fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                                              fill="#253858"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <div class="card d-flex align-items-center ">
+                                        <div class="image__card-h">
+                                            <img src="./assets/image/card-iamge.jpeg" alt="">
+                                        </div>
+                                        <div class="body__card p-4 flex-xl-fill">
+                                            <div class="category-tag" style="height: 20px">
+
+                                            </div>
+                                            <p class="my-2 text-caption neutral-pure-700">لامپ حبابی 18 وات LED افراتاب
+                                                پایه E27 مدل AF-A80-18W</p>
+
+                                            <div class="d-flex align-items-center ">
+                                                <div class="px-1 bg-primary-base rounded-circle ms-2 d-flex">
+                                                    <span class="text-tag text-white">30%</span>
+                                                </div>
+                                                <p class="m-0 text-caption-b   neutral-pure-700 text-nowrap">810,000
+                                                    تومان</p>
+                                            </div>
+                                            <p class="mb-0 text-caption text-decoration-line-through neutral-mix-70">
+                                                990,000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- control -->
+            <div class="btn-box d-flex me-6 align-items-center">
+                <button class="px-4 py-2 bg-white border border-1 rounded-1 d-flex flex-nowrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                                d="M12.16 10.87C12.06 10.86 11.94 10.86 11.83 10.87C9.45 10.79 7.56 8.84 7.56 6.44C7.56 3.99 9.54 2 12 2C14.45 2 16.44 3.99 16.44 6.44C16.43 8.84 14.54 10.79 12.16 10.87Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path
+                                d="M7.15997 14.56C4.73997 16.18 4.73997 18.82 7.15997 20.43C9.90997 22.27 14.42 22.27 17.17 20.43C19.59 18.81 19.59 16.17 17.17 14.56C14.43 12.73 9.91997 12.73 7.15997 14.56Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="text-small me-2 text-nowrap">ورود | ثبت‌نام</span>
+                </button>
+                <span class="bg-neutral-light-30 me-4 ms-2 " style="width: 1px; height: 32px;"></span>
+                <a href="" class="p-2 d-flex flex-nowrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M8.81 2L5.19 5.63" stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.19 2L18.81 5.63" stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                        <path
+                                d="M2 7.8501C2 6.0001 2.99 5.8501 4.22 5.8501H19.78C21.01 5.8501 22 6.0001 22 7.8501C22 10.0001 21.01 9.8501 19.78 9.8501H4.22C2.99 9.8501 2 10.0001 2 7.8501Z"
+                                stroke="black" stroke-width="1.5"/>
+                        <path d="M9.76001 14V17.55" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M14.36 14V17.55" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                        <path
+                                d="M3.5 10L4.91 18.64C5.23 20.58 6 22 8.86 22H14.89C18 22 18.46 20.64 18.82 18.76L20.5 10"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span class="text-small me-2 light-black text-nowrap"> سبد خرید</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- mobile -->
+    <div class="d-flex d-lg-none align-items-center gap-2 px-4 justify-content-between z-3 position-relative py-2">
+        <div class="d-flex align-items-center gap-4">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#42526E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </a>
+            <div>
+
+            </div>
+        </div>
+        <div>
+            <ul class="d-flex gap-4 p-0">
+                <li>
+                    <div class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#search__mobile" aria-controls="offcanvasBottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#42526E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M22 22L20 20" stroke="#42526E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="border-0 bg-white" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 17C10.9 17 10 17.9 10 19C10 20.1 10.9 21 12 21C13.1 21 14 20.1 14 19C14 17.9 13.1 17 12 17Z" stroke="#42526E" stroke-width="1.5"></path>
+                                <path d="M12 3C10.9 3 10 3.9 10 5C10 6.1 10.9 7 12 7C13.1 7 14 6.1 14 5C14 3.9 13.1 3 12 3Z" stroke="#42526E" stroke-width="1.5"></path>
+                                <path d="M12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10Z" stroke="#42526E" stroke-width="1.5"></path>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu mt-2" style="min-width: initial !important;">
+                            <li>
+                                <div class="d-flex px-4 gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M5.71791 6.63816L10.4036 3.59521M5.62258 8.88572L10.8984 12.3119M14.0003 12.8133C14.0003 13.8369 13.1705 14.6667 12.147 14.6667C11.1234 14.6667 10.2936 13.8369 10.2936 12.8133C10.2936 11.7898 11.1234 10.96 12.147 10.96C13.1705 10.96 14.0003 11.7898 14.0003 12.8133ZM5.70667 7.85337C5.70667 8.87694 4.8769 9.70671 3.85333 9.70671C2.82977 9.70671 2 8.87694 2 7.85337C2 6.82981 2.82977 6.00004 3.85333 6.00004C4.8769 6.00004 5.70667 6.82981 5.70667 7.85337ZM14.0003 3.18671C14.0003 4.21028 13.1705 5.04004 12.147 5.04004C11.1234 5.04004 10.2936 4.21028 10.2936 3.18671C10.2936 2.16314 11.1234 1.33337 12.147 1.33337C13.1705 1.33337 14.0003 2.16314 14.0003 3.18671Z" stroke="black" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <span class="text-tag text-nowrap">اشتراک گذاری</span>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- navigation -->
+    <nav class="   ps-6 align-items-center justify-content-between">
+        <div class="d-none d-lg-flex justify-content-between align-items-center">
+            <div class="right-side d-flex align-items-center">
+                <div class="position-relative">
+                    <button class="py-3 px-6 bg-white border-0" id="mega-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M2 8H14M2 4H14M2 12H14" stroke="#3F4064" stroke-width="1.5" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <span class="text-small me-2 neutral-pure-700">
+                            دسته‌بندی کالاها
+                          </span>
+                    </button>
+                    <!-- mega menu -->
+                    <div class="position-absolute border border-1 border-top-0   " id="mega-menu">
+                        <div class=" h-100 w-100 d-flex">
+                            <div class=" h-100  overflow-auto">
+                                <div class="px-4 menu-level-1  cursor-pointer py-3 d-flex flex-nowrap align-items-center  bg-neutral-light-20" onclick="goToSlide(0)">
+                                    <div class="px-2 py-1 rounded-circle ">
+                                        <img src="./assets/image/svg/menu-icon.svg" alt="">
+                                    </div>
+                                    <p class="mb-0 text-caption me-2 ms-4 text-nowrap ">روشنایی و نورپردازی</p>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M10 12L6 8L10 4" stroke="#EF3F40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="px-4 menu-level-1 cursor-pointer py-3 d-flex flex-nowrap align-items-center  bg-neutral-light-20" onclick="goToSlide(1)">
+                                    <div class="px-2 py-1 rounded-circle ">
+                                        <img src="./assets/image/svg/menu-icon.svg" alt="">
+                                    </div>
+                                    <p class="mb-0 text-caption me-2 ms-4 text-nowrap ">روشنایی و نورپردازی</p>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M10 12L6 8L10 4" stroke="#EF3F40" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div >
+                            </div>
+                            <div class=" h-100 sub-menu-level-1 pe-6 " >
+                                <div class="swiper-container" >
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide ">
+                                            <div class=" h-100 overflow-auto" >
+                                                <a href="#" class="d-flex align-items-center">
+                                                    <p class=" my-2 ms-2 text-caption blue-6 text-nowrap">همه محصولات روشنایی و نورپردازی</p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M10 13.28L5.65334 8.93333C5.14001 8.42 5.14001 7.58 5.65334 7.06667L10 2.72" stroke="#1677FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                                <div class="d-flex flex-wrap gap-4 pb-8">
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide ">
+                                            <div class="overflow-auto  h-100">
+                                                <a href="#" class="d-flex align-items-center">
+                                                    <p class=" my-2 ms-2 text-caption blue-6 text-nowrap">همه محصولات روشنایی و نورپردازی</p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                        <path d="M10 13.28L5.65334 8.93333C5.14001 8.42 5.14001 7.58 5.65334 7.06667L10 2.72" stroke="#1677FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </a>
+                                                <div class="d-flex flex-wrap gap-4 pb-8">
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="p-0 m-0 mt-2 menu-level-2" >
+                                                        <li>
+                                                            <a href="#">
+                                                                <p class="mb-0 text-small neutral-mix-black">قاب روشنایی چراغ و مهتابی</p>
+                                                            </a>
+                                                            <ul class="p-0 m-0  menu-level-3">
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                                <li><a href="#"><span class="text-caption neutral-mix-100">چراغ خواب و آباژور رومیزی</span></a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <span class="bg-neutral-light-30" style="width: 1px; height: 32px;"></span>
+                <ul class="m-0 p-0 d-flex">
+                    <li class="px-xl-4 px-2 py-3">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                 fill="none">
+                                <path
+                                        d="M2.65926 9.7737L1.64594 8.76036C1.2326 8.34702 1.2326 7.66702 1.64594 7.25368L2.65926 6.24034C2.8326 6.06701 2.9726 5.727 2.9726 5.487V4.05365C2.9726 3.46699 3.4526 2.987 4.03927 2.987H5.4726C5.7126 2.987 6.0526 2.84702 6.22593 2.67369L7.23926 1.66034C7.65259 1.24701 8.3326 1.24701 8.74593 1.66034L9.75928 2.67369C9.93261 2.84702 10.2726 2.987 10.5126 2.987H11.9459C12.5326 2.987 13.0126 3.46699 13.0126 4.05365V5.487C13.0126 5.727 13.1526 6.06701 13.3259 6.24034L14.3393 7.25368C14.7526 7.66702 14.7526 8.34702 14.3393 8.76036L13.3259 9.7737C13.1526 9.94704 13.0126 10.287 13.0126 10.527V11.9603C13.0126 12.547 12.5326 13.027 11.9459 13.027H10.5126C10.2726 13.027 9.93261 13.167 9.75928 13.3404L8.74593 14.3537C8.3326 14.767 7.65259 14.767 7.23926 14.3537L6.22593 13.3404C6.0526 13.167 5.7126 13.027 5.4726 13.027H4.03927C3.4526 13.027 2.9726 12.547 2.9726 11.9603V10.527C2.9726 10.2804 2.8326 9.94037 2.65926 9.7737Z"
+                                        stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 10L10 6" stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.66298 9.66659H9.66897" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M6.32967 6.33333H6.33566" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-caption neutral-pure-600">پیشنهادات وتخفیف‌ها</span>
+                        </a>
+                    </li>
+                    <li class="px-xl-4 px-2 py-3">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                 fill="none">
+                                <path
+                                        d="M11.3333 13.6666H4.66668C2.66668 13.6666 1.33334 12.6666 1.33334 10.3333V5.66659C1.33334 3.33325 2.66668 2.33325 4.66668 2.33325H11.3333C13.3333 2.33325 14.6667 3.33325 14.6667 5.66659V10.3333C14.6667 12.6666 13.3333 13.6666 11.3333 13.6666Z"
+                                        stroke="#62666D" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                <path
+                                        d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
+                                        stroke="#62666D" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                <path d="M12.6667 4.66675H10.6667" stroke="#62666D" stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.33334 11.3333H3.33334" stroke="#62666D" stroke-miterlimit="10"
+                                      stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-caption neutral-pure-600"> خرید اقساطی</span>
+                        </a>
+                    </li>
+                    <li class="px-xl-4 px-2 py-3">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                 fill="none">
+                                <path
+                                        d="M6.33334 9.16657C6.33334 9.81324 6.83335 10.3332 7.44669 10.3332H8.7C9.23334 10.3332 9.66668 9.87991 9.66668 9.31324C9.66668 8.70658 9.40002 8.48658 9.00668 8.34658L7.00001 7.64658C6.60668 7.50658 6.34002 7.29324 6.34002 6.67991C6.34002 6.11991 6.77334 5.65991 7.30667 5.65991H8.56001C9.17334 5.65991 9.67335 6.17991 9.67335 6.82658"
+                                        stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 5V11" stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path
+                                        d="M14.6667 7.99992C14.6667 11.6799 11.68 14.6666 8.00001 14.6666C4.32001 14.6666 1.33334 11.6799 1.33334 7.99992C1.33334 4.31992 4.32001 1.33325 8.00001 1.33325"
+                                        stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.3333 2V4.66667H14" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M14.6667 1.33325L11.3333 4.66659" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-caption neutral-pure-600">درخواست پیش‌فاکتور </span>
+                        </a>
+                    </li>
+                    <li class="px-xl-4 px-2 py-3">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                 fill="none">
+                                <path
+                                        d="M11.3333 3.33325H4.66666C2.66666 3.33325 1.33333 4.66659 1.33333 6.66659V11.3333C1.33333 13.3333 2.66666 14.6666 4.66666 14.6666H11.3333C13.3333 14.6666 14.6667 13.3333 14.6667 11.3333V6.66659C14.6667 4.66659 13.3333 3.33325 11.3333 3.33325Z"
+                                        stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.66667 1.33325V3.33325" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path
+                                        d="M5.66667 10.6666C6.58714 10.6666 7.33333 9.92039 7.33333 8.99992C7.33333 8.07944 6.58714 7.33325 5.66667 7.33325C4.74619 7.33325 4 8.07944 4 8.99992C4 9.92039 4.74619 10.6666 5.66667 10.6666Z"
+                                        stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.66667 7.33325H12.3333" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M9.66667 10H10" stroke="#62666D" stroke-width="1.5" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M12 10H12.3333" stroke="#62666D" stroke-width="1.5" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-caption neutral-pure-600"> راهنمای خرید</span>
+                        </a>
+                    </li>
+                    <li class="px-xl-4 px-2 py-3">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                 fill="none">
+                                <path
+                                        d="M14.6667 9.99992V5.99992C14.6667 2.66659 13.3333 1.33325 10 1.33325H6C2.66667 1.33325 1.33333 2.66659 1.33333 5.99992V9.99992C1.33333 13.3333 2.66667 14.6666 6 14.6666H10C13.3333 14.6666 14.6667 13.3333 14.6667 9.99992Z"
+                                        stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.68 4.73999H14.32" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M5.68 1.40674V4.64674" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M10.32 1.40674V4.34674" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path
+                                        d="M6.5 9.63333V8.83333C6.5 7.80666 7.22667 7.38666 8.11333 7.9L8.80667 8.3L9.5 8.7C10.3867 9.21333 10.3867 10.0533 9.5 10.5667L8.80667 10.9667L8.11333 11.3667C7.22667 11.88 6.5 11.46 6.5 10.4333V9.63333V9.63333Z"
+                                        stroke="#62666D" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-caption neutral-pure-600"> فروشنده شوید</span>
+                        </a>
+                    </li>
+                    <li class="px-xl-4 px-2 py-3">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                 fill="none">
+                                <path
+                                        d="M14.6667 9.99992V5.99992C14.6667 2.66659 13.3333 1.33325 10 1.33325H6C2.66667 1.33325 1.33334 2.66659 1.33334 5.99992V9.99992C1.33334 13.3333 2.66667 14.6666 6 14.6666H10C13.3333 14.6666 14.6667 13.3333 14.6667 9.99992Z"
+                                        stroke="#62666D" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.68 4.73999H14.32" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M5.68 1.40674V4.64674" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path d="M10.32 1.40674V4.34674" stroke="#62666D" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                                <path
+                                        d="M6.5 9.63333V8.83333C6.5 7.80666 7.22667 7.38666 8.11333 7.9L8.80667 8.3L9.5 8.7C10.3867 9.21333 10.3867 10.0533 9.5 10.5667L8.80667 10.9667L8.11333 11.3667C7.22667 11.88 6.5 11.46 6.5 10.4333V9.63333V9.63333Z"
+                                        stroke="#62666D" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-caption neutral-pure-600"> برندها</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="#" class="py-3 px-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                                d="M18.3084 15.2751C18.3084 15.5751 18.2417 15.8834 18.1 16.1834C17.9584 16.4834 17.775 16.7667 17.5334 17.0334C17.125 17.4834 16.675 17.8084 16.1667 18.0167C15.6667 18.2251 15.125 18.3334 14.5417 18.3334C13.6917 18.3334 12.7834 18.1334 11.825 17.7251C10.8667 17.3167 9.90835 16.7667 8.95835 16.0751C8.00002 15.3751 7.09169 14.6001 6.22502 13.7417C5.36669 12.8751 4.59169 11.9667 3.90002 11.0167C3.21669 10.0667 2.66669 9.11675 2.26669 8.17508C1.86669 7.22508 1.66669 6.31675 1.66669 5.45008C1.66669 4.88341 1.76669 4.34175 1.96669 3.84175C2.16669 3.33341 2.48335 2.86675 2.92502 2.45008C3.45835 1.92508 4.04169 1.66675 4.65835 1.66675C4.89169 1.66675 5.12502 1.71675 5.33335 1.81675C5.55002 1.91675 5.74169 2.06675 5.89169 2.28341L7.82502 5.00842C7.97502 5.21675 8.08335 5.40841 8.15835 5.59175C8.23335 5.76675 8.27502 5.94175 8.27502 6.10008C8.27502 6.30008 8.21669 6.50008 8.10002 6.69175C7.99169 6.88341 7.83335 7.08341 7.63335 7.28341L7.00002 7.94175C6.90835 8.03341 6.86669 8.14175 6.86669 8.27508C6.86669 8.34175 6.87502 8.40008 6.89169 8.46675C6.91669 8.53341 6.94169 8.58341 6.95835 8.63341C7.10835 8.90841 7.36669 9.26675 7.73335 9.70008C8.10835 10.1334 8.50835 10.5751 8.94169 11.0167C9.39169 11.4584 9.82502 11.8667 10.2667 12.2417C10.7 12.6084 11.0584 12.8584 11.3417 13.0084C11.3834 13.0251 11.4334 13.0501 11.4917 13.0751C11.5584 13.1001 11.625 13.1084 11.7 13.1084C11.8417 13.1084 11.95 13.0584 12.0417 12.9667L12.675 12.3417C12.8834 12.1334 13.0834 11.9751 13.275 11.8751C13.4667 11.7584 13.6584 11.7001 13.8667 11.7001C14.025 11.7001 14.1917 11.7334 14.375 11.8084C14.5584 11.8834 14.75 11.9917 14.9584 12.1334L17.7167 14.0917C17.9334 14.2417 18.0834 14.4167 18.175 14.6251C18.2584 14.8334 18.3084 15.0417 18.3084 15.2751Z"
+                                stroke="#EF3F40" stroke-width="1.5" stroke-miterlimit="10"/>
+                    </svg>
+                    <span class="text-caption me-2 primary-base"> ۰۲۱-۳۳۹۰۸۹۸۹ </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<div >
+    <div class="offcanvas offcanvas-bottom border-top-0 vh-100" tabindex="-1" id="search__mobile"
+         aria-labelledby="offcanvasBottomLabel">
+
+        <div class="p-4">
+            <div class="d-flex align-items-center  mb-6">
+                <div class="ms-3" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#42526E" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class=" d-flex w-100 p-3 rounded-1 bg-neutral-light-20 ">
+                    <div class="ms-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9.58341 17.5C13.9557 17.5 17.5001 13.9556 17.5001 9.58335C17.5001 5.2111 13.9557 1.66669 9.58341 1.66669C5.21116 1.66669 1.66675 5.2111 1.66675 9.58335C1.66675 13.9556 5.21116 17.5 9.58341 17.5Z"
+                                  stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.3334 18.3334L16.6667 16.6667" stroke="black" stroke-width="1.5"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <form class=" flex-fill">
+                        <input type="text" autofocus placeholder="عبارت مورد نظرتان را جستجو کنید..."
+                               class="border-0 bg-neutral-light-20 w-100 text-caption mb-0 neutral-mix-black">
+                    </form>
+                </div>
+            </div>
+            <!-- first view -->
+            <div>
+                <!-- row 1 Optional -->
+                <div class="mb-6">
+                    <div class="d-flex align-items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M18.3333 10.0001C18.3333 14.6001 14.6 18.3334 9.99999 18.3334C5.39999 18.3334 1.66666 14.6001 1.66666 10.0001C1.66666 5.40008 5.39999 1.66675 9.99999 1.66675C14.6 1.66675 18.3333 5.40008 18.3333 10.0001Z"
+                                  stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.0917 12.65L10.5083 11.1083C10.0583 10.8416 9.69167 10.2 9.69167 9.67497V6.2583"
+                                  stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p class="me-2 mb-0 text-small neutral-mix-black flex-fill">جستجوهای اخیر شما</p>
+                        <!-- delete-->
+                        <div class="cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none">
+                                <path d="M21 5.98C17.67 5.65 14.32 5.48 10.98 5.48C9 5.48 7.02 5.58 5.04 5.78L3 5.98M8.5 4.97L8.72 3.66C8.88 2.71 9 2 10.69 2H13.31C15 2 15.13 2.75 15.28 3.67L15.5 4.97M18.85 9.14L18.2 19.21C18.09 20.78 18 22 15.21 22H8.79C6 22 5.91 20.78 5.8 19.21L5.15 9.14M10.33 16.5H13.66M9.5 12.5H14.5"
+                                      stroke="#7A869A" stroke-width="1.5" stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="p-0 d-flex flex-wrap gap-2">
+                            <li>
+                                <a href="#"
+                                   class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                    <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                         fill="none">
+                                        <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                    <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                         fill="none">
+                                        <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                    <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                         fill="none">
+                                        <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                    <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                         fill="none">
+                                        <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- row 2  -->
+                <div>
+                    <div class="d-flex align-items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5.07492 11.0667H7.64992V17.0667C7.64992 18.4667 8.40826 18.7501 9.33326 17.7001L15.6416 10.5334C16.4166 9.65841 16.0916 8.93341 14.9166 8.93341H12.3416V2.93341C12.3416 1.53341 11.5833 1.25008 10.6583 2.30008L4.34992 9.46674C3.58326 10.3501 3.90826 11.0667 5.07492 11.0667Z"
+                                  stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <p class="me-2 mb-0 text-small neutral-mix-black">بیشترین عبارات جستجو شده</p>
+                    </div>
+                    <div>
+                        <ul class="p-0 d-flex flex-wrap gap-2">
+                            <li>
+                                <a href="#"
+                                   class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                    <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                         fill="none">
+                                        <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                    <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                         fill="none">
+                                        <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                    <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                         fill="none">
+                                        <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                   class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                    <span class="text-footnote neutral-mix-black ms-2"> متن چیپس</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
+                                         fill="none">
+                                        <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004"
+                                              stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--writing -->
+            <div>
+                <!-- row 1 category links -->
+                <div class="mb-6">
+                    <p class="text-small">دسته‌های مرتبط</p>
+                    <ul class="p-0 d-flex flex-column gap-3">
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.14 10.49 15.73 10.49H19.77C21.36 10.5 22 9.93 22 8.52Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <span class="me-2 text-small neutral-pure-700">دسته‌بندی اول</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.14 10.49 15.73 10.49H19.77C21.36 10.5 22 9.93 22 8.52Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <span class="me-2 text-small neutral-pure-700">دسته‌بندی اول</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.14 10.49 15.73 10.49H19.77C21.36 10.5 22 9.93 22 8.52Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <span class="me-2 text-small neutral-pure-700">دسته‌بندی اول</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.14 10.49 15.73 10.49H19.77C21.36 10.5 22 9.93 22 8.52Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.93 10.5 8.52Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                    <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"
+                                          stroke="#253858" stroke-width="1.5" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                <span class="me-2 text-small neutral-pure-700">دسته‌بندی اول</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- row 2 result card -->
+                <div>
+                    <div class="d-flex justify-content-between mb-4">
+                        <p class="text-small neutral-mix-black mb-0">محصولات مرتبط</p>
+                        <a href="#">
+                            <span class="ms-2 text-caption neutral-pure-700">همه نتایج</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                 fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M11.3536 1.64645C11.5488 1.84171 11.5488 2.15829 11.3536 2.35355L5.70711 8L11.3536 13.6464C11.5488 13.8417 11.5488 14.1583 11.3536 14.3536C11.1583 14.5488 10.8417 14.5488 10.6464 14.3536L4.64645 8.35355C4.45118 8.15829 4.45118 7.84171 4.64645 7.64645L10.6464 1.64645C10.8417 1.45118 11.1583 1.45118 11.3536 1.64645Z"
+                                      fill="#253858"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="card d-flex align-items-center ">
+                                <div class="image__card-h">
+                                    <img src="./assets/image/card-iamge.jpeg" alt="">
+                                </div>
+                                <div class="body__card p-4 flex-xl-fill">
+                                    <div class="category-tag" style="height: 20px">
+
+                                    </div>
+                                    <p class="my-2 text-caption neutral-pure-700">لامپ حبابی 18 وات LED افراتاب پایه E27
+                                        مدل AF-A80-18W</p>
+
+                                    <div class="d-flex align-items-center ">
+                                        <div class="px-1 bg-primary-base rounded-circle ms-2 d-flex">
+                                            <span class="text-tag text-white">30%</span>
+                                        </div>
+                                        <p class="m-0 text-caption-b   neutral-pure-700 text-nowrap">810,000 تومان</p>
+                                    </div>
+                                    <p class="mb-0 text-caption text-decoration-line-through neutral-mix-70">990,000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/swiper/swiper-bundle.min.js"></script>
+<script>
+
+
+  function goToSlide(index) {
+    swiper8.slideTo(index);
+    const slides = document.querySelectorAll(".swiper-slide")
+    slides.forEach((slide)=>{
+      const slideElement = slide.querySelector("div");
+      slideElement.classList.remove("a");
+      if(slide.classList.contains("swiper-slide-active")){
+        slideElement.classList.add("a")
+      }
+    })
+
+  }
+</script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/shared.js"></script>
+<script src="assets/js/header/header.js"></script>
+</body>
+</html>

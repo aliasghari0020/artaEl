@@ -17,7 +17,7 @@
             <div class="d-flex  justify-content-between align-items-center h-100 gap-10">
                 <!-- logo-->
                 <div class="logo__blog-header d-flex gap-2 align-items-center">
-                    <div class="menu-icon cursor-pointer d-lg-none">
+                    <div class="menu-icon cursor-pointer d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#blog-menu" aria-controls="offcanvasTop">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M3 12H21M3 6H21M9 18H21" stroke="#253858" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <!--search btn mobile-->
-            <div class="px-3 d-flex d-lg-none bg-neutral-light-10 mt-4 align-items-center gap-1 rounded-2" style="height: 40px">
+            <div class="px-3 d-flex d-lg-none bg-neutral-light-10 mt-4 align-items-center gap-1 rounded-2" style="height: 40px" data-bs-toggle="offcanvas" data-bs-target="#search__mobile" aria-controls="offcanvasTop">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M7.66683 14C11.1646 14 14.0002 11.1645 14.0002 7.66666C14.0002 4.16886 11.1646 1.33333 7.66683 1.33333C4.16903 1.33333 1.3335 4.16886 1.3335 7.66666C1.3335 11.1645 4.16903 14 7.66683 14Z" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M14.6668 14.6667L13.3335 13.3333" stroke="#253858" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -878,8 +878,112 @@
             <p class="mb-0 neutral-mix-100 text-caption text-main-lg" >تمامی حقوق برای آرتا الکتریک محفوظ است.</p>
         </div>
     </div>
+    <div class="offcanvas offcanvas-top vh-100 bg-white border-bottom-0" style="" tabindex="-1" id="blog-menu" aria-labelledby="offcanvasTopLabel">
+            <div class="py-3 px-6 border-bottom-1 d-flex justify-content-between align-items-center border bg-white">
+                <div  data-bs-dismiss="offcanvas" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 19L19 5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 19L5 5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <a href="#" class="d-lg-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="79" height="30" viewBox="0 0 79 30" fill="none">
+                        <path d="M58.8731 0.105669C54.1466 0.847422 51.4038 2.00317 48.2298 4.59068C47.7123 5.02193 47.2466 5.31518 47.1776 5.24618C47.1258 5.19443 47.0396 4.65968 47.0051 4.07318C46.9533 3.29693 47.0223 2.76218 47.2811 2.10668L47.6261 1.20967L46.9878 1.46842C42.8306 3.21068 39.2598 6.52269 37.621 10.2142L37.3105 10.887L38.1385 10.1969C38.5871 9.81745 39.3978 9.23095 39.9326 8.88594C40.9503 8.24769 43.2791 7.22994 43.7448 7.22994C43.9346 7.22994 44.0726 7.71294 44.2968 9.16195C44.7453 12.198 44.6418 12.06 45.5906 10.7317C46.9188 8.83419 48.8163 6.78144 50.3171 5.57393C52.0938 4.14218 55.2678 2.55518 57.5794 1.93417C59.2009 1.50292 59.5286 1.46842 62.9269 1.46842C66.0491 1.48567 66.7219 1.53742 67.8776 1.84792C71.3621 2.79668 73.9842 4.40093 77.0029 7.40244C78.9867 9.36895 78.9867 9.09294 76.9857 6.79869C75.3642 4.90118 72.2764 2.53793 70.3099 1.69267C67.4291 0.43342 65.1176 -0.0150814 61.7194 0.00216866C60.3911 0.0194187 59.1146 0.0711689 58.8731 0.105669Z" fill="#EF3F40"></path>
+                        <path d="M71.1897 10.0589C70.0685 10.5419 69.5337 11.9565 69.5855 14.2507L69.62 15.5445L71.1035 14.061L72.587 12.5775H75.1227H77.6585L77.8482 11.577C77.9517 11.0422 78.0897 10.4212 78.1415 10.1969L78.2277 9.81745H74.9847C72.6387 9.8347 71.5692 9.9037 71.1897 10.0589Z" fill="#EF3F40"></path>
+                        <path d="M20.4055 18.96V23.9625H16.5242H12.6429V22.41V20.8575H14.851H17.0417L17.7835 19.4775L18.5252 18.0975H13.3674C9.12393 18.0975 8.17518 18.132 8.10618 18.339C7.96818 18.684 8.33043 18.96 8.95143 18.96C9.74494 18.96 10.1934 19.512 9.81394 20.0295C9.81394 20.0467 8.27868 20.0985 6.43293 20.1502C3.60392 20.2365 3.06917 20.2882 3.06917 20.5125C3.06917 20.7195 3.44867 20.7885 5.03567 20.8575C6.62268 20.9265 7.03668 20.9955 7.17468 21.237C7.31268 21.444 7.29543 21.5992 7.14018 21.789C6.96768 21.996 6.57093 22.065 5.44967 22.065C4.03517 22.065 4.00067 22.0822 4.05242 22.4445C4.10417 22.824 4.17317 22.8412 6.12243 22.893C7.76118 22.9275 8.14068 22.9792 8.22693 23.2207C8.48568 23.8935 8.08893 23.9625 4.38017 23.9625C0.792159 23.9625 0.309158 24.0487 0.516158 24.5835C0.585159 24.7732 1.10266 24.825 2.87942 24.825C4.12142 24.825 5.24267 24.894 5.36342 24.9802C5.50142 25.0665 5.57042 25.2735 5.53592 25.446C5.48417 25.7047 5.24267 25.8082 4.27667 25.9462C3.39692 26.067 3.06917 26.1877 3.06917 26.3775C3.06917 26.6017 4.55267 26.6362 15.196 26.688C28.5647 26.7225 27.9092 26.7742 28.72 25.653C29.0995 25.101 29.1167 24.9285 29.1685 21.582L29.2202 18.0975H27.754H26.2705V21.03V23.9625H24.8042H23.338V18.96V13.9574H21.8717H20.4055V18.96Z" fill="#EF3F40"></path>
+                        <path d="M32.4805 15.0787V16.2H35.6717H38.863V15.0787V13.9575H35.6717H32.4805V15.0787Z" fill="#EF3F40"></path>
+                        <path d="M43.434 18.9945V24.0487L41.9333 24.1005L40.4153 24.1522V21.1162V18.0975H39.0008H37.569V21.0645V24.0487L36.0683 24.1005L34.5503 24.1522V21.2025V18.27H33.1703H31.7903V21.1507V24.0315L30.3585 25.4632L28.9268 26.895H30.531C31.5143 26.895 32.3595 26.8087 32.7045 26.6535C33.4463 26.343 34.2053 25.5495 34.326 24.963C34.4985 24.066 34.7228 24.4627 34.7228 25.6875V26.895H42.2783H49.8338L50.6963 26.4637C52.1626 25.7392 52.1453 25.8255 52.1453 19.4947V13.9574H50.7653H49.3853V18.96V23.9625H47.8328H46.2803V18.96V13.9574H44.8658H43.434V18.9945Z" fill="#EF3F40"></path>
+                        <path d="M53.6982 20.4262V26.895H54.3537C55.2335 26.895 55.8027 26.5672 56.1477 25.86C56.4237 25.3252 56.4582 24.6352 56.4582 19.5982V13.9574H55.0782H53.6982V20.4262Z" fill="#EF3F40"></path>
+                        <path d="M58.3555 19.2532C58.3555 25.2217 58.3727 25.2735 59.6147 26.274C60.2702 26.7915 60.322 26.8087 62.461 26.8605C64.462 26.9122 64.7207 26.8777 65.428 26.5155C65.8592 26.2912 66.3767 25.86 66.5837 25.5322C66.9632 24.9802 66.9805 24.7905 66.9805 21.5302V18.0975H65.6005H64.2205V21.03V23.9625H62.668H61.1155V18.96V13.9575H59.7355H58.3555V19.2532Z" fill="#EF3F40"></path>
+                        <path d="M61.978 15.1649V16.3725H64.4793H66.9805V15.1649V13.9574H64.4793H61.978V15.1649Z" fill="#EF3F40"></path>
+                        <path d="M73.708 20.4262V26.895H74.3118C75.1398 26.895 75.7608 26.5672 76.0885 25.9635C76.3473 25.4977 76.3818 24.6697 76.4335 19.6845L76.4853 13.9574H75.1053H73.708V20.4262Z" fill="#EF3F40"></path>
+                        <path d="M69.5679 21.1507V24.0487L68.1534 25.4805L66.7217 26.9122L68.6364 26.8605C70.4304 26.8087 70.5857 26.7742 71.1894 26.3085C72.3279 25.446 72.5005 24.8422 72.5005 21.3232V18.27H71.0342H69.5679V21.1507Z" fill="#EF3F40"></path>
+                        <path d="M21.6475 28.827L21.6992 29.9137L24.856 29.9655L27.9955 30V28.8787V27.7575H24.8042H21.5957L21.6475 28.827Z" fill="#EF3F40"></path>
+                        <path d="M37.8281 28.6027C37.8281 28.9822 37.9144 29.3445 38.0006 29.3962C38.1041 29.4652 38.1731 29.1892 38.1731 28.7235C38.1731 28.2922 38.1041 27.93 38.0006 27.93C37.9144 27.93 37.8281 28.2405 37.8281 28.6027Z" fill="#EF3F40"></path>
+                        <path d="M45.7632 28.7235C45.7632 29.1892 45.8322 29.4652 45.9357 29.3962C46.1427 29.2755 46.1082 27.93 45.9012 27.93C45.8322 27.93 45.7632 28.2922 45.7632 28.7235Z" fill="#EF3F40"></path>
+                        <path d="M50.0757 28.7235C50.0757 29.1892 50.1447 29.4652 50.2482 29.3962C50.4552 29.2755 50.4207 27.93 50.2137 27.93C50.1447 27.93 50.0757 28.2922 50.0757 28.7235Z" fill="#EF3F40"></path>
+                        <path d="M32.5841 28.2405C32.4633 28.4475 32.7221 29.3617 32.9291 29.4307C33.0326 29.4652 33.1016 29.2237 33.1016 28.8615C33.0671 28.2405 32.7911 27.9127 32.5841 28.2405Z" fill="#EF3F40"></path>
+                        <path d="M42.8652 28.2405C42.5892 28.4302 42.8652 29.379 43.2274 29.448C43.3827 29.4825 43.5207 29.4307 43.5207 29.3272C43.5207 29.2237 43.4517 29.1375 43.3482 29.1375C43.1067 29.1375 43.1239 28.6717 43.3654 28.5855C43.4862 28.551 43.4689 28.4475 43.3137 28.3267C43.1929 28.206 42.9859 28.1715 42.8652 28.2405Z" fill="#EF3F40"></path>
+                        <path d="M29.3756 28.4475C29.1686 28.5855 29.2031 28.62 29.5481 28.62L29.9794 28.6372L29.5826 28.8097C29.0479 29.0167 29.1859 29.3962 29.7724 29.3962C30.1691 29.4135 30.2381 29.3445 30.2381 28.9477C30.2381 28.689 30.1174 28.4475 29.9621 28.3785C29.6344 28.2577 29.6861 28.2405 29.3756 28.4475Z" fill="#EF3F40"></path>
+                        <path d="M31.1866 28.413C31.0313 28.5682 31.1003 29.2927 31.2728 29.3962C31.3763 29.448 31.4453 29.3445 31.4453 29.1547C31.4453 28.965 31.5316 28.758 31.6178 28.7062C31.7213 28.6545 31.7903 28.5337 31.7903 28.4647C31.7903 28.3267 31.3246 28.275 31.1866 28.413Z" fill="#EF3F40"></path>
+                        <path d="M34.2057 28.4475C33.9987 28.5855 34.0332 28.62 34.3782 28.62L34.8095 28.6372L34.4127 28.8097C33.878 29.0167 34.016 29.3962 34.6025 29.3962C34.9992 29.4135 35.0682 29.3445 35.0682 28.9477C35.0682 28.689 34.9475 28.4475 34.7922 28.3785C34.4645 28.2577 34.5162 28.2405 34.2057 28.4475Z" fill="#EF3F40"></path>
+                        <path d="M36.1549 28.3957C35.8616 28.4992 35.8789 29.0512 36.1721 29.2928C36.5171 29.5688 36.9656 29.3445 36.9656 28.8787C36.9656 28.5682 36.5861 28.1887 36.3964 28.2922C36.3791 28.2922 36.2584 28.344 36.1549 28.3957ZM36.7414 29.0685C36.6896 29.1203 36.5344 29.1375 36.4136 29.0857C36.2756 29.034 36.3274 28.9822 36.5171 28.9822C36.7069 28.965 36.8104 29.0167 36.7414 29.0685Z" fill="#EF3F40"></path>
+                        <path d="M39.1907 28.551C38.9319 28.8615 39.1562 29.3618 39.6219 29.448C40.0359 29.5343 40.2947 28.7753 39.9324 28.482C39.5702 28.206 39.4667 28.2232 39.1907 28.551ZM39.8462 29.0685C39.7944 29.1203 39.6392 29.1375 39.5184 29.0858C39.3804 29.034 39.4322 28.9823 39.6219 28.9823C39.8117 28.965 39.9152 29.0168 39.8462 29.0685Z" fill="#EF3F40"></path>
+                        <path d="M41.1057 28.5338C40.9332 28.7408 40.9159 28.896 41.0539 29.103C41.2609 29.448 41.8302 29.4825 41.9337 29.1548C41.9854 28.9995 41.9164 28.965 41.6404 29.0513C41.3644 29.1375 41.2782 29.0858 41.2782 28.8788C41.2782 28.6545 41.3817 28.6028 41.6404 28.6718C41.8647 28.7235 41.9682 28.689 41.9164 28.5683C41.8129 28.2405 41.3472 28.2405 41.1057 28.5338Z" fill="#EF3F40"></path>
+                        <path d="M44.2624 28.551C44.1417 28.8788 44.2624 29.3273 44.4694 29.31C44.5729 29.2928 44.6247 29.1893 44.5902 29.0513C44.5729 28.9305 44.6247 28.7753 44.7282 28.7063C44.9869 28.551 44.9352 28.3267 44.6247 28.3267C44.4694 28.3267 44.3142 28.4303 44.2624 28.551Z" fill="#EF3F40"></path>
+                        <path d="M47.1949 28.3958C46.8844 28.5165 46.9189 29.2583 47.2294 29.379C47.5399 29.4998 48.0056 29.3273 48.0056 29.103C48.0056 29.0168 47.8504 28.9995 47.6606 29.0513C47.4191 29.1375 47.3156 29.0858 47.3156 28.8788C47.3156 28.6718 47.4191 28.62 47.6606 28.7063C48.0746 28.827 48.1264 28.5338 47.7296 28.3785C47.5744 28.3268 47.4536 28.275 47.4364 28.2923C47.4191 28.2923 47.2984 28.344 47.1949 28.3958Z" fill="#EF3F40"></path>
+                        <path d="M51.2832 28.9132C51.2832 29.2237 51.3695 29.4825 51.4557 29.4825C51.5592 29.4825 51.6282 29.3272 51.6282 29.1547C51.6282 28.965 51.7145 28.758 51.8007 28.7062C52.0767 28.5337 51.9905 28.344 51.6282 28.344C51.3522 28.344 51.2832 28.4647 51.2832 28.9132Z" fill="#EF3F40"></path>
+                        <path d="M48.7818 29.31C48.8508 29.4135 48.9716 29.448 49.0578 29.3962C49.2993 29.241 49.2476 29.1375 48.9371 29.1375C48.7991 29.1375 48.7301 29.2237 48.7818 29.31Z" fill="#EF3F40"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="">
+                <ul class="px-6  m-0 border-bottom border-1">
+                    <li class="py-3">
+                        <a href="#" class="d-flex text-black align-items-center gap-2 justify-content-between">
+                            <span class="text-small">آموزش نصب</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M10.0002 13.28L5.65355 8.93333C5.14022 8.42 5.14022 7.58 5.65355 7.06667L10.0002 2.72" stroke="#7A869A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-3">
+                        <a href="#" class="d-flex text-black align-items-center gap-2 justify-content-between">
+                            <span class="text-small"> آموزش نورپردازی</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M10.0002 13.28L5.65355 8.93333C5.14022 8.42 5.14022 7.58 5.65355 7.06667L10.0002 2.72" stroke="#7A869A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-3">
+                        <a href="#" class="d-flex text-black align-items-center gap-2 justify-content-between">
+                            <span class="text-small"> آموزش نورپردازی</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M10.0002 13.28L5.65355 8.93333C5.14022 8.42 5.14022 7.58 5.65355 7.06667L10.0002 2.72" stroke="#7A869A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-3">
+                        <a href="#" class="d-flex text-black align-items-center gap-2 justify-content-between">
+                            <span class="text-small"> آموزش نورپردازی</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M10.0002 13.28L5.65355 8.93333C5.14022 8.42 5.14022 7.58 5.65355 7.06667L10.0002 2.72" stroke="#7A869A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-3">
+                        <a href="#" class="d-flex text-black align-items-center gap-2 justify-content-between">
+                            <span class="text-small"> آموزش نورپردازی</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M10.0002 13.28L5.65355 8.93333C5.14022 8.42 5.14022 7.58 5.65355 7.06667L10.0002 2.72" stroke="#7A869A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="py-3">
+                        <a href="#" class="d-flex text-black align-items-center gap-2 justify-content-between">
+                            <span class="text-small"> آموزش نورپردازی</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M10.0002 13.28L5.65355 8.93333C5.14022 8.42 5.14022 7.58 5.65355 7.06667L10.0002 2.72" stroke="#7A869A" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex px-6 flex-column gap-3 pt-3">
+                    <a href="#" class="d-flex neutral-pure-700 align-items-center gap-2 justify-content-between">
+                        <span class="text-small"> آموزش نورپردازی</span>
+                    </a>
+                    <a href="#" class="d-flex neutral-pure-700 align-items-center gap-2 justify-content-between">
+                        <span class="text-small"> آموزش نورپردازی</span>
+                    </a>
+                    <a href="#" class="d-flex neutral-pure-700 align-items-center gap-2 justify-content-between">
+                        <span class="text-small"> آموزش نورپردازی</span>
+                    </a>
+                </div>
+            </div>
+    </div>
+
 </footer>
-<div class="offcanvas offcanvas-top search-blog" style="" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+<div class="offcanvas offcanvas-top vh-100 bg-white search-blog" style="" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-header " >
         <div class="container">
             <div class="px-4 py-3 d-flex align-items-center gap-2">
@@ -931,6 +1035,86 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offcanvas offcanvas-bottom border-top-0 vh-100" tabindex="-1" id="search__mobile" aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
+    <div class="p-4">
+        <div class="d-flex align-items-center  mb-6">
+            <div class="ms-3" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#42526E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+            <div class=" d-flex w-100 p-3 rounded-1 mobile-searched bg-neutral-light-20 ">
+                <div class="ms-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9.58341 17.5C13.9557 17.5 17.5001 13.9556 17.5001 9.58335C17.5001 5.2111 13.9557 1.66669 9.58341 1.66669C5.21116 1.66669 1.66675 5.2111 1.66675 9.58335C1.66675 13.9556 5.21116 17.5 9.58341 17.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M18.3334 18.3334L16.6667 16.6667" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <form class=" flex-fill d-flex">
+                    <input type="text" autocomplete="off" id="mobile-search-input" autofocus="" placeholder="عبارت مورد نظرتان را جستجو کنید..." class="border-0  bg-neutral-light-20 w-100 text-caption mb-0 neutral-mix-black">
+                    <div class="me-2 d-none cursor-pointer mobile-delete-value-search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_2596_29464)">
+                                <path d="M12.5001 7.50008L7.50008 12.5001M7.50008 7.50008L12.5001 12.5001M18.3334 10.0001C18.3334 14.6025 14.6025 18.3334 10.0001 18.3334C5.39771 18.3334 1.66675 14.6025 1.66675 10.0001C1.66675 5.39771 5.39771 1.66675 10.0001 1.66675C14.6025 1.66675 18.3334 5.39771 18.3334 10.0001Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2596_29464">
+                                    <rect width="20" height="20" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- first view -->
+        <div class="mobile-step-1 d-block">
+            <!-- row 1 Optional -->
+            <!-- row 2  -->
+            <div>
+                <div><div class="d-flex align-items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M5.07492 11.0667H7.64992V17.0667C7.64992 18.4667 8.40826 18.7501 9.33326 17.7001L15.6416 10.5334C16.4166 9.65841 16.0916 8.93341 14.9166 8.93341H12.3416V2.93341C12.3416 1.53341 11.5833 1.25008 10.6583 2.30008L4.34992 9.46674C3.58326 10.3501 3.90826 11.0667 5.07492 11.0667Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    <p class="me-2 mb-0 text-small neutral-mix-black">بیشترین عبارات جستجو شده</p>
+                </div>
+                    <div>
+                        <ul class="p-0 d-flex gap-2"><li>
+                            <a href="#" class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                <span class="text-footnote neutral-mix-black ms-2">چراغ</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"> <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </a>
+                        </li><li>
+                            <a href="#" class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                <span class="text-footnote neutral-mix-black ms-2">لامپ</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"> <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </a>
+                        </li><li>
+                            <a href="#" class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                <span class="text-footnote neutral-mix-black ms-2">محافظ</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"> <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </a>
+                        </li><li>
+                            <a href="#" class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                <span class="text-footnote neutral-mix-black ms-2">چرا</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"> <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </a>
+                        </li><li>
+                            <a href="#" class="pe-3 ps-2 py-1_5 border border-1 d-flex align-items-center rounded-3">
+                                <span class="text-footnote neutral-mix-black ms-2">کابل</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none"> <path d="M7.49992 9.96004L4.23992 6.70004C3.85492 6.31504 3.85492 5.68504 4.23992 5.30004L7.49992 2.04004" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </a>
+                        </li></ul>
+                    </div></div>
+            </div>
+        </div>
+        <!--writing -->
+        <div class="mobile-step-2 d-none">
+            <!-- row 1 category links -->
+            <!-- row 2 result card -->
+            <div class="result">
             </div>
         </div>
     </div>
